@@ -11,7 +11,7 @@ import "../assets/css/responsive.css"
 import "../assets/css/style.css"
 import "../assets/css/dark.css"
 import "../assets/css/flaticon.css"
-import logo from '../assets/imgs/logo.jpeg'
+import logo from '../assets/imgs/logo.png'
 import { useNavigate } from 'react-router-dom'
 import { CgClose } from "react-icons/cg";
 import { CgMenu } from "react-icons/cg";
@@ -69,15 +69,15 @@ const Header = () => {
                       </a>
                     </li>
                     <li className="nav-item">
-                      <a href="" className="nav-link" >
-                      How to get<br/> involved
+                      <a href="" className="nav-link">
+                      How to get<br/>involved
                         <i className="bx bx-chevron-down" />
                       </a>
                       <ul className="dropdown-menu">
 
 
                         <li className="nav-item">
-                          <a onClick={() => navigate("/team")} href="" className="nav-link">SP Disciple</a>
+                          <a onClick={() => navigate("/team")} href="" className="nav-link">Team</a>
                         </li>
                         <li className="nav-item">
                           <a onClick={() => navigate("/volunteer")} href="" className="nav-link">
@@ -86,17 +86,17 @@ const Header = () => {
                         </li>
                         <li className="nav-item">
                           <a onClick={() => navigate("/causes")} href='' className="nav-link">
-                            Donation
+                            Donor
 
                           </a>
 
                         </li>
                         <li className="nav-item">
-                          <a onClick={() => navigate("/becomeVolunteer")} href="" className="nav-link">Become a host</a>
+                          <a onClick={() => navigate("/becomevolunteer")} href="" className="nav-link">Become a volunteer</a>
                         </li>
-                        {/* <li className="nav-item">
+                        <li className="nav-item">
                           <a onClick={() => navigate("/implementationProcess")} href="" className="nav-link">Implementation Process</a>
-                        </li> */}
+                        </li>
 
                         
                       </ul>

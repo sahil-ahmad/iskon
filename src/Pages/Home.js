@@ -197,8 +197,16 @@ const Home = () => {
     }
   ];
 
+  const navigate = useNavigate();
 
-  const navigate = useNavigate()
+  
+  const [showList, setShowList] = useState(false);
+
+  const handleButtonClick = () => {
+    setShowList((prevShowList) => !prevShowList); // Toggle the list visibility
+  };
+
+
   return (
     <div>
       <div className="sidebar-modal">
@@ -309,14 +317,28 @@ const Home = () => {
                       Without the devotees, what would I do? I am simply sitting here alone. My Guru Maharaj ordered me to accomplish this mission, and without the help of my disciples, how could I do it? Therefore, they are all my heart and soul. I am very much indebted to all my disciples.<br />
                       —Srila Prabhupada (Letter to HH Jayapataka Swami, 24th October 1976)
                     </p>
-                    {/* <div className="banner-btn wow animate__animated animate__fadeInUp" data-wow-delay="1s">
-                      <a onClick={() => navigate("/becomevolunteer")} href="" className="default-btn">
-                        <span> Become a volunteer</span>
+                    <div className="banner-btn wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                      <a
+                        onClick={(e) => {
+                          e.preventDefault();
+                          handleButtonClick();
+                        }}
+                        href="#"
+                        className="default-btn"
+                      >
+                        <span>How to get involved</span>
                       </a>
-                      <a onClick={() => navigate("/donation")} href="" className="default-btn active">
-                        <span>Donate</span>
-                      </a>
-                    </div> */}
+                      {/* Render the list conditionally */}
+                      {showList && (
+                        <ul className="involvement-list">
+                          <li onClick={() => navigate("/volunteer")}>SP Disciple</li>
+                          <li onClick={() => navigate("/Volunteer")}>Volunteer</li>
+                          <li onClick={() => navigate("/causes")}>Donation</li>
+                          <li onClick={() => navigate("/implementationProcess")}>Become a host </li>
+                        </ul>
+                      )}
+                    </div>
+
                   </div>
                 </div>
                 <div className="col-lg-6" >
@@ -392,7 +414,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="about-area pt-100 pb-70">
+      <section className="about-area pt-100 ">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
