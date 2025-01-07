@@ -34,7 +34,7 @@ const Header = () => {
               <div className="mobile-menu">
                 <div className="logo">
                   <a onClick={() => navigate("/")} className="navbar-brand2" href="">
-                    <img className='mobile-logo' style={{ width: "100px" }} src={logo} alt="logo" />
+                    <img className='mobile-logo' style={{ width: "150px" }} src={logo} alt="logo" />
                   </a>
                 </div>
                 <div className="sidebar-menu">
@@ -51,7 +51,7 @@ const Header = () => {
             <div className="container">
               <nav className="navbar navbar-expand-md navbar-light">
                 <a onClick={() => navigate("/")} className="navbar-brand" href="">
-                  <img style={{ width: "100px" }} src={logo} alt="logo" />
+                  <img style={{ width: "150px" }} src={logo} alt="logo" />
                 </a>
                 <div className="collapse navbar-collapse mean-menu">
                   <ul className="navbar-nav m-auto">
@@ -157,7 +157,7 @@ const Header = () => {
                       </ul>
                     </li>
                   </ul>
-                  <div className="others-option">
+                  {/* <div className="others-option">
 
                     <div className="get-quote">
                       <a onClick={() => navigate("/donation")} className="default-btn">
@@ -165,7 +165,7 @@ const Header = () => {
                       </a>
                     </div>
 
-                  </div>
+                  </div> */}
 
                 </div>
               </nav>

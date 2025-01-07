@@ -840,7 +840,8 @@ textarea.form-control {
 
 .navbar-area .desktop-nav {
     padding-top: 20px;
-    padding-bottom: 20px
+    padding-bottom: 20px;
+    
 }
 
 .navbar-area .desktop-nav .navbar {
@@ -1417,23 +1418,30 @@ textarea.form-control {
 }
 
 .banner-area {
-    background-color: #f7c78d;
+    background-color: rgba(0, 0, 0, 1);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     height: auto;
     position: relative;
-    z-index: 1;
+    z-index: 100;
     overflow: hidden;
     padding: 20px;
 }
-
+.bannerVideo{
+    position: absolute;
+    top: 0;
+background-color: rgba(0, 0, 0, .6);
+}
 .banner-area .banner-bg-shape-1 {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    z-index: -1
+    z-index: -1;
+    object-fit: cover;
+    background-position: center;
+    
 }
 
 .banner-content {
@@ -3453,7 +3461,7 @@ textarea.form-control {
 }
 
 .volunteer-join-area {
-    background-image: url(../img/volunteer-join-bg.jpg);
+    background-image: url(../img/volunteer.jpeg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -5793,4 +5801,13 @@ label {
   .involvement-list li:hover {
     background-color: #ddd;
   }
-  
+  .banner-bg-shape-1{
+   background-color: #F99115;
+  }
+.single-privacy h3{
+    margin-top: 2rem;
+}
+
+.availability{
+    text-align: left;
+}

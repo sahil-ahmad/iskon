@@ -117,32 +117,22 @@ const PrivacyPolicy = () => {
   <section className="privacy-policy ptb-100">
     <div className="container">
       <div className="single-privacy">
-        <h3 className="mt-0">Welcome To Tians Privacy Policy</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. scrambled it to make a type specimen book.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
-        <h3>Welcome To Help Tians Privacy</h3>
-        <ul>
-          <li>
-            <p><strong>01.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, tempora laboriosam porro fugit debitis, dolorem natus assumenda facilis in ut reiciendis laborum sapiente minima libero quas praesentium ex rerum eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates nulla porro commodi illum necessitatibus, dicta officiis dolore iusto quaerat officia alias blanditiis, in ea non eveniet? Ipsam neque harum in. quas praesentium ex rerum eos</p>
-          </li>
-          <li>
-            <p><strong>02.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, tempora laboriosam porro fugit debitis, dolorem natus assumenda facilis in ut reiciendis laborum sapiente minima libero quas praesentium ex rerum eos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit necessitatibus similique quia nostrum ullam repellendus ea, eum ipsum voluptate odit harum reprehenderit, nesciunt eius animi totam aliquam dicta officia minima!</p>
-          </li>
-          <li>
-            <p><strong>03.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, tempora laboriosam porro fugit debitis, dolorem natus assumenda facilis in ut reiciendis laborum sapiente minima libero quas praesentium ex rerum eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum magnam cum a doloremque? Eveniet, eum consequatur? Provident accusantium, libero molestiae consequuntur quisquam laboriosam dolor voluptas? Eveniet!</p>
-          </li>
-          <li>
-            <p><strong>04.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, tempora laboriosam porro fugit debitis, dolorem natus assumenda facilis in ut reiciendis laborum sapiente minima libero quas praesentium ex rerum eos. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem atque sapiente debitis distinctio mollitia deleniti beatae nostrum reprehenderit aperiam nobis recusandae voluptas harum, totam necessitatibus quia adipisci.</p>
-          </li>
-          <li>
-            <p><strong>05.</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, tempora laboriosam porro fugit debitis, dolorem natus assumenda facilis in ut reiciendis laborum sapiente minima libero quas praesentium ex rerum eos. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi voluptatibus voluptatem porro aliquid illo optio necessitatibus, rem in aspernatur natus voluptate dolorum nihil repellat quia assumenda impedit eligendi, doloremque?</p>
-          </li>
-        </ul>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
-        <h3>Welcome To Services Tians Policy</h3>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum electronic typesetting, remaining essentially.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type.</p>
-      </div>
+    
+       
+        <h3>Data Collection</h3>
+        <p>Personal details like name, contact information, and preferences are collected for registration, verification, and coordination.</p>
+        <h3>Use of Data</h3>
+        <p>Information is used for processing registrations, verifying discipleship, and communicating updates or tasks.</p>
+        <h3>Data Sharing</h3>
+        <p>Shared only with ISKCON centers or authorized personnel for verification and coordination; never shared for marketing.</p>
+        <h3>Data Security</h3>
+        <p>Measures are in place to protect your data, but absolute security cannot be guaranteed.</p>
+        <h3>Your Rights</h3>
+        <p>You can access, update, or request deletion of your data by contacting us.</p>
+        <h3>Policy Updates</h3>
+        <p>We may update these policies and will notify you of significant changes.</p>
+     
+</div>
     </div>
   </section>
 </div>
