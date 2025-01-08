@@ -92,6 +92,13 @@ const Header = () => {
 
                         </li>
                         <li className="nav-item">
+                          <a onClick={() => navigate("/donation")} href='' className="nav-link">
+                            Donation
+
+                          </a>
+
+                        </li>
+                        <li className="nav-item">
                           <a onClick={() => navigate("/discipleRegistration")} href='' className="nav-link">
                           Disciple Registration
                           </a>
