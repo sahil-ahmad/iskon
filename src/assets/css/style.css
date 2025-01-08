@@ -902,7 +902,7 @@ textarea.form-control {
     opacity: 0;
     width: 250px;
     visibility: hidden;
-    z-index: 99;
+    z-index: 200;
     display: block;
     padding: 0;
     background-color: #fff;
@@ -1429,9 +1429,9 @@ textarea.form-control {
     padding: 20px;
 }
 .bannerVideo{
-    position: absolute;
-    top: 0;
-background-color: rgba(0, 0, 0, .6);
+    /* position: absolute; */
+    /* top: 0; */
+/* background-color: rgba(0, 0, 0, .6); */
 }
 .banner-area .banner-bg-shape-1 {
     position: absolute;
@@ -1451,7 +1451,7 @@ background-color: rgba(0, 0, 0, .6);
 }
 
 .banner-content h1 {
-    font-size: 65px;
+    font-size: clamp(50px,3vw,65px);
     font-weight: 900;
     margin-bottom: 35px;
     color: #011d49
@@ -5811,3 +5811,4 @@ label {
 .availability{
     text-align: left;
 }
+

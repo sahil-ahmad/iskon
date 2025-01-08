@@ -26,6 +26,7 @@ import Becomevolunteer from "./Pages/Becomevolunteer";
 import Donation from "./Donation/Donation";
 import ImplementationProcess from "./Pages/ImplementationProcess";
 import Volunteer from "./Pages/Volunteer";
+import DiscipleRegistration from "./Pages/DiscipleRegistration ";
 
 
 function App() {
@@ -59,7 +60,7 @@ function App() {
           <Route path="/donation"  element={<Donation/>}/>
           <Route path="implementationProcess" element= {<ImplementationProcess/>}/>
           <Route path="/volunteer" element={<Volunteer/>}/>
-          
+          <Route path="discipleRegistration" element={<DiscipleRegistration/>}/>
 
 
 

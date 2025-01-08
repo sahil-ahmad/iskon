@@ -331,7 +331,7 @@ const Home = () => {
                       {/* Render the list conditionally */}
                       {showList && (
                         <ul className="involvement-list">
-                          <li onClick={() => navigate("/volunteer")}>SP Disciple</li>
+                          <li onClick={() => navigate("/discipleRegistration")}>SP Disciple</li>
                           <li onClick={() => navigate("/Volunteer")}>Volunteer</li>
                           <li onClick={() => navigate("/causes")}>Donation</li>
                           <li onClick={() => navigate("/implementationProcess")}>Become a host </li>
@@ -362,7 +362,7 @@ const Home = () => {
         <div className="banner-bg-shape-1">
 
           {/* <img src={homemain} alt="Image" /> */}
-          <video src={bannervideo} autoPlay loop muted style={{ width: '100%', opacity: "0.7" }} />
+          <video src={bannervideo} autoPlay loop muted style={{ width: '100%', opacity: "0.7" }} className='videobanner' />
 
         </div>
       </section>

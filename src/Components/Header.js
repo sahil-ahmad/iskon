@@ -34,7 +34,7 @@ const Header = () => {
               <div className="mobile-menu">
                 <div className="logo">
                   <a onClick={() => navigate("/")} className="navbar-brand2" href="">
-                    <img className='mobile-logo' style={{ width: "150px" }} src={logo} alt="logo" />
+                    <img className='mobile-logo' style={{ width: "80px",marginTop:'1rem' }} src={logo} alt="logo" />
                   </a>
                 </div>
                 <div className="sidebar-menu">
@@ -51,7 +51,7 @@ const Header = () => {
             <div className="container">
               <nav className="navbar navbar-expand-md navbar-light">
                 <a onClick={() => navigate("/")} className="navbar-brand" href="">
-                  <img style={{ width: "150px" }} src={logo} alt="logo" />
+                  <img style={{ width: "100px" }} src={logo} alt="logo" />
                 </a>
                 <div className="collapse navbar-collapse mean-menu">
                   <ul className="navbar-nav m-auto">
@@ -90,6 +90,11 @@ const Header = () => {
 
                           </a>
 
+                        </li>
+                        <li className="nav-item">
+                          <a onClick={() => navigate("/discipleRegistration")} href='' className="nav-link">
+                          Disciple Registration
+                          </a>
                         </li>
                         <li className="nav-item">
                           <a onClick={() => navigate("/becomevolunteer")} href="" className="nav-link">Become a volunteer</a>
@@ -139,9 +144,9 @@ const Header = () => {
                             </li>
                           </ul>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                           <a onClick={() => navigate("/faq")} href="" className="nav-link">FAQ</a>
-                        </li>
+                        </li> */}
                         <li className="nav-item">
                           <a onClick={() => navigate("/privacypolicy")} href="" className="nav-link">Privacy Policy</a>
                         </li>

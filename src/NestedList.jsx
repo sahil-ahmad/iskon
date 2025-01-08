@@ -25,7 +25,7 @@ export default function NestedList({toggleDrawer}) {
     return (
         <div>
             <ListItem button onClick={handleClick}>
-                <ListItemText primary="Pages" />
+                <ListItemText primary="How to get involved" />
                 {open ? <ExpandLess /> : <ExpandMore />}
             </ListItem>
             <Collapse in={open} timeout="auto" unmountOnExit>
@@ -33,11 +33,14 @@ export default function NestedList({toggleDrawer}) {
                     <ListItem className='pages-list' style={{borderBottom:"2px solid #F1F1F1"}}  button onClick={handleClick2} >
                         <ListItemText primary="Team" onClick={() => navigate("/team")} />
                     </ListItem>
+                    <ListItem className='pages-list' style={{borderBottom:"2px solid #F1F1F1"}}  button onClick={handleClick2} >
+                        <ListItemText primary="volunteer" onClick={() => navigate("/volunteer")} />
+                    </ListItem>
                     <ListItem style={{borderBottom:"2px solid #F1F1F1"}} button onClick={handleClick2}>
                         <ListItemText primary="Donor" onClick={() => navigate("/causes")} />
                     </ListItem>
                     <ListItem style={{borderBottom:"2px solid #F1F1F1"}} button onClick={handleClick2}>
-                        <ListItemText primary="Volunteer" onClick={() => navigate("/volunteer")} />
+                        <ListItemText primary="Disciple Registration" onClick={() => navigate("/discipleRegistration")} />
                     </ListItem>
                     
                     <ListItem  style={{borderBottom:"2px solid #F1F1F1"}}button onClick={handleClick2}>
@@ -50,26 +53,26 @@ export default function NestedList({toggleDrawer}) {
             </Collapse>
 
             <ListItem button onClick={handleClick}>
-                <ListItemText primary="other" />
+                <ListItemText primary="Useful Resources" />
                 {open ? <ExpandLess /> : <ExpandMore />}
             </ListItem>
             <Collapse in={open} timeout="auto" unmountOnExit>
                 <List component="div" disablePadding   >
                     <ListItem className='pages-list' style={{borderBottom:"2px solid #F1F1F1"}}  button onClick={handleClick2} >
-                        <ListItemText primary="Team" onClick={() => navigate("/team")} />
+                        <ListItemText primary="User" onClick={() => navigate("/team")} />
                     </ListItem>
                     <ListItem style={{borderBottom:"2px solid #F1F1F1"}} button onClick={handleClick2}>
-                        <ListItemText primary="Donor" onClick={() => navigate("/causes")} />
+                        <ListItemText primary="Privacy policy" onClick={() => navigate("/privacypolicy")} />
                     </ListItem>
                     <ListItem style={{borderBottom:"2px solid #F1F1F1"}} button onClick={handleClick2}>
-                        <ListItemText primary="Volunteer" onClick={() => navigate("/volunteer")} />
+                        <ListItemText primary="Term & condition" onClick={() => navigate("/teamcondition")} />
                     </ListItem>
                     
                     <ListItem  style={{borderBottom:"2px solid #F1F1F1"}}button onClick={handleClick2}>
-                        <ListItemText primary="Become a volunteer" onClick={() => navigate("/becomevolunteer")} />
+                        <ListItemText primary="Coming soon" onClick={() => navigate("/comingsoon")} />
                     </ListItem>
                     <ListItem style={{borderBottom:"2px solid #F1F1F1"}} button onClick={handleClick2}>
-                        <ListItemText primary="Implementation process" onClick={() => navigate("/implementationProcess")} />
+                        <ListItemText primary="404 Error Page" onClick={() => navigate("/error")} />
                     </ListItem>
                 </List>
             </Collapse>
