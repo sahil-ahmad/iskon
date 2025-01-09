@@ -48,7 +48,7 @@ const AboutUs = () => {
                       </li>
                       <li>
                         <i className="bx bx-check" />
-                        <span>More Charity Better Lives</span>
+                        <span>Meet the team</span>
                       </li>
                     </ul>
                   </div>
@@ -56,14 +56,15 @@ const AboutUs = () => {
                     <ul>
                       <li>
                         <i className="bx bx-check" />
-                        <span>Poor Children Education</span>
+                        <span>Volunteers</span>
                       </li>
                       <li>
                         <i className="bx bx-check" />
-                        <span>Safe water For People</span>
-                      </li>
+                        <span>Team</span>
+                      </li> 
                     </ul>
                   </div>
+            
                 </div>
                 <a href="" className="default-btn">
                   <span>About Us</span>
