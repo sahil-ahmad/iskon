@@ -37,10 +37,8 @@ const AboutUs = () => {
               <div className="about-content">
                 <span className="top-title">About</span>
                 <h2>Introduction to Srila Prabhupada Disciples Care Program</h2>
-                <p>Srila Prabhupada’s disciples surrendered their life to the spiritual master at very young age and served the movement for entire life.
-                </p>
-                <p>This program is to express our gratitude, as we are relishing the fruits from their labour.
-                </p>
+                <p>The Srila Prabhupada Disciple Care Program is a heartfelt initiative inspired by the visionary guidance of His Holiness Jayapataka Swami Maharaja and His Holiness Gopal Krishna Goswami Maharaja. This program is dedicated to honoring and supporting the disciples of His Divine Grace A.C. Bhaktivedanta Swami Srila Prabhupada, the founder-acharya of the International Society for Krishna Consciousness (ISKCON).
+</p>
                 <div className="row">
                   <div className="col-lg-6">
                     <ul>

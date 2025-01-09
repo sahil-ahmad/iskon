@@ -1030,7 +1030,7 @@ textarea.form-control {
 
 .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu:last-child .dropdown-menu {
     left: auto;
-    right: -100%
+    right: 100%
 }
 
 .navbar-area .desktop-nav .navbar .navbar-nav .nav-item:hover ul {

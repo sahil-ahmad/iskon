@@ -334,7 +334,7 @@ const Home = () => {
                           <li onClick={() => navigate("/discipleRegistration")}>SP Disciple</li>
                           <li onClick={() => navigate("/Volunteer")}>Volunteer</li>
                           <li onClick={() => navigate("/causes")}>Donation</li>
-                          <li onClick={() => navigate("/implementationProcess")}>Become a host </li>
+                          <li onClick={() => navigate("/implementationProcess")}>Become a  </li>
                         </ul>
                       )}
                     </div>
@@ -379,10 +379,7 @@ const Home = () => {
               <div className="about-content">
                 <span className="top-title">About</span>
                 <h2>Introduction to Srila Prabhupada Disciples Care Program</h2>
-                <p>Srila Prabhupada’s disciples surrendered their life to the spiritual master at very young age and served the movement for entire life.
-                </p>
-                <p>This program is to express our gratitude, as we are relishing the fruits from their labour.
-                </p>
+                <p>inspired by HH Jayapataka Swami and HH GopalKrishna Maharaja</p>
                 <div className="row">
                   <div className="col-lg-6">
                     <ul>
@@ -392,7 +389,7 @@ const Home = () => {
                       </li>
                       <li>
                         <i className="bx bx-check" />
-                        <span>More Charity Better Lives</span>
+                        <span>Meet the team</span>
                       </li>
                     </ul>
                   </div>
@@ -400,11 +397,11 @@ const Home = () => {
                     <ul>
                       <li>
                         <i className="bx bx-check" />
-                        <span>Poor Children Education</span>
+                        <span>Volunteers</span>
                       </li>
                       <li>
                         <i className="bx bx-check" />
-                        <span>Safe water For People</span>
+                        <span>Team</span>
                       </li>
                     </ul>
                   </div>
@@ -423,11 +420,8 @@ const Home = () => {
             <div className="col-lg-6">
               <div className="about-content">
                 {/* <span className="top-title">About</span> */}
-                <h2>Mission  of Srila Prabhupada Disciples Care Program</h2>
-                <p>To honor the lifelong dedication and service of Srila Prabhupada's disciples by providing compassionate care and support as they age to lead a life with dignity and purpose in their later years.
-
-                </p>
-
+                <h2>Vision & Mission</h2>
+                <p>To honor the lifelong dedication and service of Srila Prabhupada's disciples by providing compassionate care and support as they age to lead a life with dignity and purpose in their later years.</p>
               </div>
             </div>
             <div className="col-lg-6">
@@ -440,7 +434,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="about-area pt-100 pb-70">
+      {/* <section className="about-area pt-100 pb-70">
         <div className="container">
           <div className="row align-items-center">
             <div className="col-lg-6">
@@ -452,7 +446,7 @@ const Home = () => {
             </div>
             <div className="col-lg-6">
               <div className="about-content">
-                {/* <span className="top-title">About</span> */}
+               
                 <h2>Vision of Srila Prabhupada Disciples Care Program</h2>
                 <p>To honor the lifelong dedication and service of Srila Prabhupada's disciples by providing compassionate care and support as they age to lead a life with dignity and purpose in their later years.
 
@@ -462,7 +456,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="what-we-do-area pt-100 pb-70">
         <div className="container">

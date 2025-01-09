@@ -75,9 +75,21 @@ const Header = () => {
                       </a>
                       <ul className="dropdown-menu">
 
-
+                      <li className="nav-item">
+                          <a onClick={() => navigate("/implementationProcess")} href="" className="nav-link">Implementation Process</a>
+                        </li>
                         <li className="nav-item">
-                          <a onClick={() => navigate("/team")} href="" className="nav-link">Team</a>
+                          <a onClick={() => navigate("/discipleRegistration")} href='' className="nav-link">
+                          Disciple Registration
+                          </a>
+                        </li>
+                        <li className="nav-item">
+                          <a onClick={() => navigate("/becomevolunteer")} href="" className="nav-link">Become a volunteer</a>
+                        </li>
+                        <li className="nav-item">
+                          <a onClick={() => navigate("/donation")} href='' className="nav-link">
+                            Donation
+                          </a>
                         </li>
                         <li className="nav-item">
                           <a onClick={() => navigate("/volunteer")} href="" className="nav-link">
@@ -91,24 +103,10 @@ const Header = () => {
                           </a>
 
                         </li>
-                        <li className="nav-item">
-                          <a onClick={() => navigate("/donation")} href='' className="nav-link">
-                            Donation
-
-                          </a>
-
-                        </li>
-                        <li className="nav-item">
-                          <a onClick={() => navigate("/discipleRegistration")} href='' className="nav-link">
-                          Disciple Registration
-                          </a>
-                        </li>
-                        <li className="nav-item">
-                          <a onClick={() => navigate("/becomevolunteer")} href="" className="nav-link">Become a volunteer</a>
-                        </li>
-                        <li className="nav-item">
-                          <a onClick={() => navigate("/implementationProcess")} href="" className="nav-link">Implementation Process</a>
-                        </li>
+            
+                        
+                        
+                       
 
                         
                       </ul>
