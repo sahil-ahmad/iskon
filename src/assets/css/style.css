@@ -919,7 +919,45 @@ textarea.form-control {
 }
 
 .navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu {
-<<<<<<< HEAD
+  position: absolute;
+  top: 130%;
+  left: 15px;
+  opacity: 0;
+  width: 250px;
+  visibility: hidden;
+  z-index: 200;
+  display: block;
+  padding: 0;
+  background-color: #fff;
+  border: none;
+  border-radius: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 20px 3px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li {
+  position: relative;
+  padding: 0;
+}
+
+.navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a {
+  font-size: 14px;
+  color: #011d49;
+  position: relative;
+  padding: 10px 15px;
+  border-bottom: 1px dashed #eee;
+  margin-left: 0;
+  margin-right: 0;
+  text-transform: capitalize;
+  display: block;
+  font-weight: 600;
+}
+
+.navbar-area .desktop-nav .navbar .navbar-nav .nav-item .dropdown-menu li a i {
+  float: right;
+  top: 12px<<<<<<< HEAD
     position: absolute;
     top: 130%;
     left: 15px;
