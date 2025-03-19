@@ -73,14 +73,8 @@ const Header = () => {
                       </a>
                       <ul className="dropdown-menu">
 
-                      <li className="nav-item">
-                          <a onClick={() => navigate("/implementationProcess")} href="" className="nav-link">Implementation Process</a>
-                        </li>
-                        <li className="nav-item">
-                          <a onClick={() => navigate("/discipleRegistration")} href='' className="nav-link">
-                          Disciple Registration
-                          </a>
-                        </li>
+                      
+                       
                         <li className="nav-item">
                           <a onClick={() => navigate("/becomevolunteer")} href="" className="nav-link">Become a volunteer</a>
                         </li>
@@ -106,17 +100,6 @@ const Header = () => {
                           Disciple Registration
                           </a>
                         </li>
-<<<<<<< HEAD
-            
-                        
-                        
-                       
-=======
-                        <li className="nav-item">
-                          <a onClick={() => navigate("/becomevolunteer")} href="" className="nav-link">Become a volunteer</a>
-                        </li>
-                        
->>>>>>> d76d313 (iskon)
 
                         
                       </ul>

@@ -35,7 +35,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Fade from '@mui/material/Fade';
-import bannervideo from '../assets/img/banner/bannervideo.mp4'
+import bannervideo from '../assets/img/banner/bannerVideo.mp4'
 
 
 
