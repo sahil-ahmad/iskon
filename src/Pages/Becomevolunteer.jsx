@@ -1,6 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 
 const Becomevolunteer = () => {
+  const [showOtherInput, setShowOtherInput] = useState(false);
+  const [otherText, setOtherText] = useState("");
+
+  const handleSelectChange = (event) => {
+    setShowOtherInput(event.target.value === "Other");
+  };
+
   return (
     <>
       <div className="page-title-area bg-1">
@@ -61,6 +68,11 @@ const Becomevolunteer = () => {
           <form className="volunteer-join">
             <div className="volunteer-title">
               <h2>Volunteer Registration Form</h2>
+              <p style={{ marginTop: "2rem", textAlign: "left" }}>
+                Thank you for your willingness to serve Srila Prabhupada’s
+                disciples. Please fill out the form below to indicate your
+                interest and the areas where you’d like to contribute.
+              </p>
             </div>
             <div className="row">
               <div className="col-12">
@@ -370,51 +382,46 @@ const Becomevolunteer = () => {
               <div className="col-12">
                 <div className="form-group">
                   {/* <label for="availability" className="form-group" >Availability:</label> */}
-                  <select
-                    className="form-control"
-                    id="Country"
-                    style={{ backgroundColor: "#F99115", color: "#fff" }}
-                  >
-                    <option value="">Areas of Interest</option>
-                    <option value="5-10 hours/week">
-                      <input
-                        type="checkbox"
-                        id="financialAssistance"
-                        name="areasOfInterest"
-                        value="Financial Assistance"
-                      />
-                      <label for="financialAssistance">
+                  <div>
+                    <select
+                      className="form-control"
+                      id="Country"
+                      style={{ backgroundColor: "#F99115", color: "#fff" }}
+                      onChange={handleSelectChange}
+                    >
+                      <option value="">Areas of Interest</option>
+                      <option value="Financial Assistance">
                         Financial Assistance
-                      </label>
-                    </option>
-                    <option value="10-20 hours/week">
-                      <label for="healthcareCoordination">
+                      </option>
+                      <option value="Healthcare Coordination">
                         Healthcare Coordination
-                      </label>
-                    </option>
-                    <option value="10-20 hours/week">
-                      {" "}
-                      <label for="emotionalSupport">
+                      </option>
+                      <option value="Emotional Support">
                         Emotional and Spiritual Support
-                      </label>
-                    </option>
-                    <option value="10-20 hours/week">
-                      {" "}
-                      <label for="healthAssessments">
+                      </option>
+                      <option value="Health Assessments">
                         Comprehensive Health Assessments
-                      </label>
-                    </option>
-                    <option value="10-20 hours/week">
-                      <label for="communityBuilding">
+                      </option>
+                      <option value="Community Building">
                         Community Building Activities
-                      </label>
-                    </option>
-                    <option value="10-20 hours/week">
-                      <label for="relocationAssistance">
+                      </option>
+                      <option value="Relocation Assistance">
                         Relocation Assistance
-                      </label>
-                    </option>
-                  </select>
+                      </option>
+                      <option value="Other">Any other way</option>
+                    </select>
+
+                    {showOtherInput && (
+                      <input
+                        type="text"
+                        placeholder="Please specify"
+                        className="form-control mt-2"
+                        style={{ backgroundColor: "#fff", color: "#000" }}
+                        value={otherText}
+                        onChange={(e) => setOtherText(e.target.value)}
+                      />
+                    )}
+                  </div>
                 </div>
               </div>
 
@@ -476,12 +483,6 @@ const Becomevolunteer = () => {
             <button type="submit" className="default-btn">
               <span>Submit</span>
             </button>
-
-            <p style={{ marginTop: "3rem", textAlign: "left" }}>
-              Thank you for your willingness to serve Srila Prabhupada’s
-              disciples. Please fill out the form below to indicate your
-              interest and the areas where you’d like to contribute.
-            </p>
           </form>
         </div>
       </section>

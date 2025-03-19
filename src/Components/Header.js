@@ -76,28 +76,22 @@ const Header = () => {
                       
                        
                         <li className="nav-item">
-                          <a onClick={() => navigate("/becomevolunteer")} href="" className="nav-link">Become a volunteer</a>
+                          <a onClick={() => navigate("/discipleRegistration")} href="" className="nav-link">SP Disciple</a>
                         </li>
                         <li className="nav-item">
-                          <a onClick={() => navigate("/donation")} href='' className="nav-link">
-                            Donation
+                          <a onClick={() => navigate("/Volunteer")} href='' className="nav-link">
+                          Become a Volunteer
                           </a>
                         </li>
                         <li className="nav-item">
-                          <a onClick={() => navigate("/volunteer")} href="" className="nav-link">
-                            Volunteer
+                          <a onClick={() => navigate("/donation")} href="" className="nav-link">
+                          Donation
                           </a>
                         </li>
-                        {/* <li className="nav-item">
-                          <a onClick={() => navigate("/causes")} href='' className="nav-link">
-                            Donor
-
-                          </a>
-
-                        </li> */}
+                      
                         <li className="nav-item">
-                          <a onClick={() => navigate("/discipleRegistration")} href='' className="nav-link">
-                          Disciple Registration
+                          <a onClick={() => navigate("/implementationProcess")} href='' className="nav-link">
+                          Become a host
                           </a>
                         </li>
 

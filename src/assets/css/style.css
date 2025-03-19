@@ -1809,7 +1809,10 @@ textarea.form-control {
 @media (max-width: 768px) {
     .banner-area .banner-bg-shape-1 {
       top: 0;
+      height: 100vh;
+      
     }
+   
   }
   
 
@@ -1820,7 +1823,7 @@ textarea.form-control {
 }
 
 .banner-content h1 {
-    font-size: clamp(50px, 3vw, 65px);
+    font-size: clamp(30px, 3vw, 65px);
     font-weight: 900;
     margin-bottom: 35px;
     color: #011d49;
@@ -1830,7 +1833,7 @@ textarea.form-control {
 .banner-content p {
   margin-bottom: 26px;
   font-size: 17px;
-  color: #011d49;
+  color: #000;
 }
 
 .banner-content .banner-btn .default-btn.active {
@@ -4291,8 +4294,8 @@ textarea.form-control {
 .page-title-area {
   position: relative;
   overflow: hidden;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   text-align: center;
   z-index: 1;
   background-color: #f7c78d;
