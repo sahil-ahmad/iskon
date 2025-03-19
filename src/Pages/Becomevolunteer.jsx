@@ -1,24 +1,22 @@
-import React from 'react'
+import React from "react";
 
 const Becomevolunteer = () => {
-    return (
-        <>
-            <div className="page-title-area bg-1">
-                <div className="container">
-                    <div className="page-title-content">
-                        <h2>Become a volunteer</h2>
-                        <ul>
-                            <li>
-                                <a href="index.html">
-                                    Home
-                                </a>
-                            </li>
-                            <li className="active">Become a volunteer</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            {/* <section className="volunteer-join-area volunteer-join-area-page ptb-100">
+  return (
+    <>
+      <div className="page-title-area bg-1">
+        <div className="container">
+          <div className="page-title-content">
+            <h2>Become a volunteer</h2>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li className="active">Become a volunteer</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      {/* <section className="volunteer-join-area volunteer-join-area-page ptb-100">
                 <div className="container">
                     <form className="volunteer-join">
                         <div className="volunteer-title">
@@ -58,43 +56,69 @@ const Becomevolunteer = () => {
                 </div>
                 
             </section> */}
-            <section className="volunteer-join-area volunteer-join-area-page ptb-100">
+      <section className="volunteer-join-area volunteer-join-area-page ptb-100">
         <div className="container">
           <form className="volunteer-join">
             <div className="volunteer-title">
-              <h2>Join Our Volunteer Group For Serve Helpless</h2>
+              <h2>Volunteer Registration Form</h2>
             </div>
             <div className="row">
               <div className="col-12">
                 <div className="form-group">
-                  <input type="text" className="form-control" id="First-Name" placeholder="Name" />
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="First-Name"
+                    placeholder="Name"
+                  />
                 </div>
               </div>
               <div className="col-12">
                 <div className="form-group">
-                  <input type="email" className="form-control" id="Email" placeholder="Email" />
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="Email"
+                    placeholder="Email"
+                  />
                 </div>
               </div>
               <div className="col-12">
                 <div className="form-group">
-                  <input type="text" className="form-control" id="Number" placeholder="Phone" />
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="Number"
+                    placeholder="Phone"
+                  />
                 </div>
               </div>
               <div className="col-12">
                 <div className="form-group">
-                  <input type="text" className="form-control" id="Address" placeholder="Address" />
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="Address"
+                    placeholder="Address"
+                  />
                 </div>
               </div>
               <div className="col-12">
                 <div className="form-group">
-                  <select className="form-control" id="Country" style={{ color: '#fff' }}>
+                  <select
+                    className="form-control"
+                    id="Country"
+                    style={{ color: "#fff" }}
+                  >
                     <option value="">Select Country</option>
                     <option value="Afghanistan">Afghanistan</option>
                     <option value="Albania">Albania</option>
                     <option value="Algeria">Algeria</option>
                     <option value="Andorra">Andorra</option>
                     <option value="Angola">Angola</option>
-                    <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                    <option value="Antigua and Barbuda">
+                      Antigua and Barbuda
+                    </option>
                     <option value="Argentina">Argentina</option>
                     <option value="Armenia">Armenia</option>
                     <option value="Australia">Australia</option>
@@ -110,7 +134,9 @@ const Becomevolunteer = () => {
                     <option value="Benin">Benin</option>
                     <option value="Bhutan">Bhutan</option>
                     <option value="Bolivia">Bolivia</option>
-                    <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                    <option value="Bosnia and Herzegovina">
+                      Bosnia and Herzegovina
+                    </option>
                     <option value="Botswana">Botswana</option>
                     <option value="Brazil">Brazil</option>
                     <option value="Brunei">Brunei</option>
@@ -121,13 +147,17 @@ const Becomevolunteer = () => {
                     <option value="Cambodia">Cambodia</option>
                     <option value="Cameroon">Cameroon</option>
                     <option value="Canada">Canada</option>
-                    <option value="Central African Republic">Central African Republic</option>
+                    <option value="Central African Republic">
+                      Central African Republic
+                    </option>
                     <option value="Chad">Chad</option>
                     <option value="Chile">Chile</option>
                     <option value="China">China</option>
                     <option value="Colombia">Colombia</option>
                     <option value="Comoros">Comoros</option>
-                    <option value="Congo (Congo-Brazzaville)">Congo (Congo-Brazzaville)</option>
+                    <option value="Congo (Congo-Brazzaville)">
+                      Congo (Congo-Brazzaville)
+                    </option>
                     <option value="Costa Rica">Costa Rica</option>
                     <option value="Croatia">Croatia</option>
                     <option value="Cuba">Cuba</option>
@@ -136,7 +166,9 @@ const Becomevolunteer = () => {
                     <option value="Denmark">Denmark</option>
                     <option value="Djibouti">Djibouti</option>
                     <option value="Dominica">Dominica</option>
-                    <option value="Dominican Republic">Dominican Republic</option>
+                    <option value="Dominican Republic">
+                      Dominican Republic
+                    </option>
                     <option value="Ecuador">Ecuador</option>
                     <option value="Egypt">Egypt</option>
                     <option value="El Salvador">El Salvador</option>
@@ -233,12 +265,18 @@ const Becomevolunteer = () => {
                     <option value="Romania">Romania</option>
                     <option value="Russia">Russia</option>
                     <option value="Rwanda">Rwanda</option>
-                    <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                    <option value="Saint Kitts and Nevis">
+                      Saint Kitts and Nevis
+                    </option>
                     <option value="Saint Lucia">Saint Lucia</option>
-                    <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                    <option value="Saint Vincent and the Grenadines">
+                      Saint Vincent and the Grenadines
+                    </option>
                     <option value="Samoa">Samoa</option>
                     <option value="San Marino">San Marino</option>
-                    <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                    <option value="Sao Tome and Principe">
+                      Sao Tome and Principe
+                    </option>
                     <option value="Saudi Arabia">Saudi Arabia</option>
                     <option value="Senegal">Senegal</option>
                     <option value="Serbia">Serbia</option>
@@ -265,14 +303,18 @@ const Becomevolunteer = () => {
                     <option value="Timor-Leste">Timor-Leste</option>
                     <option value="Togo">Togo</option>
                     <option value="Tonga">Tonga</option>
-                    <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                    <option value="Trinidad and Tobago">
+                      Trinidad and Tobago
+                    </option>
                     <option value="Tunisia">Tunisia</option>
                     <option value="Turkey">Turkey</option>
                     <option value="Turkmenistan">Turkmenistan</option>
                     <option value="Tuvalu">Tuvalu</option>
                     <option value="Uganda">Uganda</option>
                     <option value="Ukraine">Ukraine</option>
-                    <option value="United Arab Emirates">United Arab Emirates</option>
+                    <option value="United Arab Emirates">
+                      United Arab Emirates
+                    </option>
                     <option value="United Kingdom">United Kingdom</option>
                     <option value="United States">United States</option>
                     <option value="Uruguay">Uruguay</option>
@@ -289,13 +331,22 @@ const Becomevolunteer = () => {
               </div>
               <div className="col-12">
                 <div className="form-group">
-                  <input type="text" className="form-control" id="Address" placeholder="Nearest ISKCON Center" />
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="Address"
+                    placeholder="Nearest ISKCON Center"
+                  />
                 </div>
               </div>
-              <div className='col-12 availability ' >
+              <div className="col-12 availability ">
                 <div className="form-group">
                   {/* <label for="availability" className="form-group" >Availability:</label> */}
-                  <select className="form-control" id="Country" style={{ backgroundColor: '#F99115', color: '#fff' }}>
+                  <select
+                    className="form-control"
+                    id="Country"
+                    style={{ backgroundColor: "#F99115", color: "#fff" }}
+                  >
                     <option value="">Availability</option>
                     <option value="5-10 hours/week">5-10 hours/week</option>
                     <option value="10-20 hours/week">10-20 hours/week</option>
@@ -303,9 +354,9 @@ const Becomevolunteer = () => {
                   </select>
                 </div>
               </div>
-              <div className='col-12' >
+              {/* <div className='col-12' >
                 <div className="form-group">
-                  {/* <label for="availability" className="form-group" >Availability:</label> */}
+                  
                   <select className="form-control" id="Country" style={{ backgroundColor: '#F99115', color: '#fff' }}>
                     <option value="">Preferred Mode of Service</option>
                     <option value="5-10 hours/week"><input type="radio" id="remote" name="modeOfService" value="Remote" required />
@@ -315,65 +366,127 @@ const Becomevolunteer = () => {
 
                   </select>
                 </div>
-              </div>
-              <div className='col-12' >
-              <div className="form-group">
-                {/* <label for="availability" className="form-group" >Availability:</label> */}
-                <select className="form-control" id="Country" style={{ backgroundColor: '#F99115', color: '#fff' }}>
-                  <option value="">Areas of Interest</option>
-                  <option value="5-10 hours/week"><input type="checkbox" id="financialAssistance" name="areasOfInterest" value="Financial Assistance" />
-                    <label for="financialAssistance">Financial Assistance</label></option>
-                  <option value="10-20 hours/week"><label for="healthcareCoordination">Healthcare Coordination</label></option>
-                  <option value="10-20 hours/week">  <label for="emotionalSupport">Emotional and Spiritual Support</label></option>
-                  <option value="10-20 hours/week">  <label for="healthAssessments">Comprehensive Health Assessments</label></option>
-                  <option value="10-20 hours/week"><label for="communityBuilding">Community Building Activities</label></option>
-                  <option value="10-20 hours/week"><label for="relocationAssistance">Relocation Assistance</label></option>
-
-                </select>
+              </div> */}
+              <div className="col-12">
+                <div className="form-group">
+                  {/* <label for="availability" className="form-group" >Availability:</label> */}
+                  <select
+                    className="form-control"
+                    id="Country"
+                    style={{ backgroundColor: "#F99115", color: "#fff" }}
+                  >
+                    <option value="">Areas of Interest</option>
+                    <option value="5-10 hours/week">
+                      <input
+                        type="checkbox"
+                        id="financialAssistance"
+                        name="areasOfInterest"
+                        value="Financial Assistance"
+                      />
+                      <label for="financialAssistance">
+                        Financial Assistance
+                      </label>
+                    </option>
+                    <option value="10-20 hours/week">
+                      <label for="healthcareCoordination">
+                        Healthcare Coordination
+                      </label>
+                    </option>
+                    <option value="10-20 hours/week">
+                      {" "}
+                      <label for="emotionalSupport">
+                        Emotional and Spiritual Support
+                      </label>
+                    </option>
+                    <option value="10-20 hours/week">
+                      {" "}
+                      <label for="healthAssessments">
+                        Comprehensive Health Assessments
+                      </label>
+                    </option>
+                    <option value="10-20 hours/week">
+                      <label for="communityBuilding">
+                        Community Building Activities
+                      </label>
+                    </option>
+                    <option value="10-20 hours/week">
+                      <label for="relocationAssistance">
+                        Relocation Assistance
+                      </label>
+                    </option>
+                  </select>
                 </div>
               </div>
 
+              <div>
+                <label for="experience">
+                  Do you have any relevant experience in the selected areas?
+                </label>
+                <textarea
+                  id="experience"
+                  name="experience"
+                  required
+                  style={{
+                    width: "100%",
+                    background: "rgb(228, 193, 151)",
+                    border: "1.5px solid #F99115",
+                  }}
+                ></textarea>
+              </div>
+              <div>
+                <label for="motivation">
+                  Why do you want to volunteer for this service?
+                </label>
+                <textarea
+                  id="motivation"
+                  name="motivation"
+                  required
+                  style={{
+                    width: "100%",
+                    background: "rgb(228, 193, 151)",
+                    border: "1.5px solid #F99115",
+                  }}
+                ></textarea>
+              </div>
+              <div>
+                <label for="skills">
+                  Do you have any specific skills (e.g., healthcare, event
+                  planning, counseling)?
+                </label>
+                <textarea
+                  id="skills"
+                  name="skills"
+                  required
+                  style={{
+                    width: "100%",
+                    background: "rgb(228, 193, 151)",
+                    border: "1.5px solid #F99115",
+                  }}
+                ></textarea>
+              </div>
 
-              <div>
-                <label for="experience">Do you have any relevant experience in the selected areas?</label>
-                <textarea id="experience" name="experience" required style={{width:'100%', background:'rgb(228, 193, 151)',border:'1.5px solid #F99115'}}></textarea>
-              </div>
-              <div>
-                <label for="motivation">Why do you want to volunteer for this service?</label>
-                <textarea id="motivation" name="motivation" required style={{width:'100%', background:'rgb(228, 193, 151)',border:'1.5px solid #F99115'}}></textarea>
-              </div>
-              <div>
-                <label for="skills">Do you have any specific skills (e.g., healthcare, event planning, counseling)?</label>
-                <textarea id="skills" name="skills" required style={{width:'100%', background:'rgb(228, 193, 151)',border:'1.5px solid #F99115'}}></textarea>
-              </div>
-
-              <div style={{ display: 'flex',marginTop:'1rem' }}>
+              <div style={{ display: "flex", marginTop: "1rem" }}>
                 <input type="checkbox" id="consent" name="consent" required />
-                <label for="consent">I agree to the terms and conditions and understand the responsibilities of volunteering.</label>
+                <label for="consent">
+                  I agree to the terms and conditions and understand the
+                  responsibilities of volunteering.
+                </label>
               </div>
-
-
             </div>
             <button type="submit" className="default-btn">
               <span>Submit</span>
             </button>
 
-
-
-
-
-
-
-
-
-
+            <p style={{ marginTop: "3rem", textAlign: "left" }}>
+              Thank you for your willingness to serve Srila Prabhupada’s
+              disciples. Please fill out the form below to indicate your
+              interest and the areas where you’d like to contribute.
+            </p>
           </form>
         </div>
       </section>
+    </>
+  );
+};
 
-
-        </>
-    )
-}
-
-export default Becomevolunteer
+export default Becomevolunteer;

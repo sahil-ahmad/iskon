@@ -64,6 +64,7 @@ const Donation = () => {
 
 
                                 <form className="help-form">
+<<<<<<< HEAD
                                     <p style={{ textAlign: 'left', fontSize: '1.4rem' }}>Your generous support helps us care for Srila Prabhupada’s disciples, who have dedicated their lives to spreading Krishna Consciousness worldwide. By contributing to this program, you directly assist in providing essential services such as healthcare, financial assistance, emotional support, and relocation assistance for Srila Prabhupada’s beloved disciples.<br />
                                         Together, we can express our gratitude for their lifelong service and ensure their well-being in their later years.
                                     </p>
@@ -80,6 +81,34 @@ const Donation = () => {
                                                 <li>IFSC Code- ICIC0004024</li>
                                             </ul>
                                             <p style={{ fontSize: '1rem', fontWeight: '700' }}>2. PayPal</p>
+=======
+                                    <p style={{ textAlign: 'left', fontSize: '1.4rem' }}>Once the online transfer is made, please send the following details to 
+                                    </p>
+                                    <div >
+                                        {/* <h3 style={{ textDecoration: 'underline' }}>Ways to Donate</h3> */}
+                                        <div style={{ textAlign: 'left' }}>
+                                            {/* <p style={{ fontSize: '1rem', fontWeight: '700' }}>1.Bank Account Transfer</p> */}
+                                            {/* <p>You can make a direct transfer to our program's bank account. Please use the following details:</p> */}
+                                            <p>Email: jpsofficeaccts@gmail.com , jpsofficemanager@gmail.com </p>
+                                            <ol>
+                                                <li>Snapshot of the transaction or the transaction details.</li>
+                                                <li>The date of transaction.</li>
+                                                <li>Legal name of the donor.</li>
+                                                <li>Complete Indian postal address with PIN code.</li>
+                                                <li>Income Tax PAN Number (Mandatory if donaton is more than INR 49,999)</li>
+                                                <li>Contact details (whatsapp mobile number must, email id)</li>
+                                                <li>Purpose of the deposit (General / Health / Travel / SPDC ).</li>
+                                                <li>Type of donation receipt required: 80 G tax exemption benefit type or General receipt. </li>
+                                            </ol>
+                                            <p>No changes will be made after issue of donation receipt.</p>
+                                            <p>If you have any questions or need assistance with your donation, please contact us:
+                                            </p>
+                                            <ul>
+                                                <li>Email: [Insert Email Address]</li>
+                                                <li>Phone: [Insert Phone Number]</li>
+                                            </ul>
+                                            {/* <p style={{ fontSize: '1rem', fontWeight: '700' }}>2. PayPal</p>
+>>>>>>> d76d313 (iskon)
                                             <p>Donate securely via PayPal by clicking the link below:<br/>
                                                 Donate via PayPal
                                             </p>
@@ -115,7 +144,11 @@ const Donation = () => {
                                                 <li>Phone: [Insert Phone Number]</li>
                                             </ul>
 
+<<<<<<< HEAD
                                             <p>Every donation, no matter the size, makes a difference. Together, let us care for those who have carried forward Srila Prabhupada’s mission with unwavering dedication. Thank you for your support!</p>
+=======
+                                            <p>Every donation, no matter the size, makes a difference. Together, let us care for those who have carried forward Srila Prabhupada’s mission with unwavering dedication. Thank you for your support!</p> */}
+>>>>>>> d76d313 (iskon)
                                         </div>
                                     </div>
 

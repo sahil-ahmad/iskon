@@ -64,11 +64,9 @@ const Header = () => {
                       <a onClick={() => navigate("/aboutus")} href="" className="nav-link">About Us</a>
                     </li>
                     <li className="nav-item">
-                      <a onClick={() => navigate("/events")} href="" className="nav-link">
-                        Success Stories
-                      </a>
-                    </li>
-                    <li className="nav-item">
+                          <a onClick={() => navigate("/implementationProcess")} href="" className="nav-link">Implementation Process</a>
+                        </li>
+                        <li className="nav-item">
                       <a href="" className="nav-link">
                       How to get<br/>involved
                         <i className="bx bx-chevron-down" />
@@ -96,28 +94,46 @@ const Header = () => {
                             Volunteer
                           </a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                           <a onClick={() => navigate("/causes")} href='' className="nav-link">
                             Donor
 
                           </a>
 
+                        </li> */}
+                        <li className="nav-item">
+                          <a onClick={() => navigate("/discipleRegistration")} href='' className="nav-link">
+                          Disciple Registration
+                          </a>
                         </li>
+<<<<<<< HEAD
             
                         
                         
                        
+=======
+                        <li className="nav-item">
+                          <a onClick={() => navigate("/becomevolunteer")} href="" className="nav-link">Become a volunteer</a>
+                        </li>
+                        
+>>>>>>> d76d313 (iskon)
 
                         
                       </ul>
                     </li>
                     <li className="nav-item">
+                      <a onClick={() => navigate("/events")} href="" className="nav-link">
+                        Success Stories
+                      </a>
+                    </li>
+                    
+                    {/* <li className="nav-item">
                       <a onClick={() => navigate("/services")} href="" className="nav-link">
                         Key feature
 
                       </a>
 
-                    </li>
+                    </li> */}
 
 
                     <li className="nav-item">
@@ -161,21 +177,13 @@ const Header = () => {
                         <li className="nav-item">
                           <a onClick={() => navigate("/comingsoon")} href="" className="nav-link">Coming Soon</a>
                         </li>
-                        <li className="nav-item">
+                        {/* <li className="nav-item">
                           <a onClick={() => navigate("/error")} href="" className="nav-link">404 Error Page</a>
-                        </li>
+                        </li> */}
                       </ul>
                     </li>
                   </ul>
-                  {/* <div className="others-option">
-
-                    <div className="get-quote">
-                      <a onClick={() => navigate("/donation")} className="default-btn">
-                        <span>Donation</span>
-                      </a>
-                    </div>
-
-                  </div> */}
+                 
 
                 </div>
               </nav>
@@ -185,12 +193,7 @@ const Header = () => {
 
         </div>
       </header>
-      {/* <div className='mobile-nav-icon' >
-                  <div className='menu-circle' >
-                    <CgMenu />
-                    <CgClose />
-                  </div>
-                </div> */}
+   
 
     </div>
   )

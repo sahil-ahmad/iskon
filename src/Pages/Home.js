@@ -35,7 +35,7 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import Fade from '@mui/material/Fade';
-import bannervideo from '../assets/img/banner/bannerVideo.mp4'
+import bannervideo from '../assets/img/banner/bannervideo.mp4'
 
 
 
@@ -332,9 +332,9 @@ const Home = () => {
                       {showList && (
                         <ul className="involvement-list">
                           <li onClick={() => navigate("/discipleRegistration")}>SP Disciple</li>
-                          <li onClick={() => navigate("/Volunteer")}>Volunteer</li>
-                          <li onClick={() => navigate("/causes")}>Donation</li>
-                          <li onClick={() => navigate("/implementationProcess")}>Become a  </li>
+                          <li onClick={() => navigate("/Volunteer")}>Become a Volunteer</li>
+                          <li onClick={() => navigate("/donation")}>Donation</li>
+                          <li onClick={() => navigate("/implementationProcess")}>Become a host </li>
                         </ul>
                       )}
                     </div>
@@ -362,7 +362,7 @@ const Home = () => {
         <div className="banner-bg-shape-1">
 
           {/* <img src={homemain} alt="Image" /> */}
-          <video src={bannervideo} autoPlay loop muted style={{ width: '100%', opacity: "0.7" }} className='videobanner' />
+          <video src={bannervideo} autoPlay loop muted style={{ width: '100%', opacity: "0.8" }} className='videobanner' />
 
         </div>
       </section>
@@ -385,15 +385,15 @@ const Home = () => {
                     <ul>
                       <li>
                         <i className="bx bx-check" />
-                        <span>How To Become Volante</span>
+                        <span>Meet the team</span>
                       </li>
                       <li>
                         <i className="bx bx-check" />
-                        <span>Meet the team</span>
+                        <span>Meet the volunteers</span>
                       </li>
                     </ul>
                   </div>
-                  <div className="col-lg-6">
+                  {/* <div className="col-lg-6">
                     <ul>
                       <li>
                         <i className="bx bx-check" />
@@ -404,11 +404,11 @@ const Home = () => {
                         <span>Team</span>
                       </li>
                     </ul>
-                  </div>
+                  </div> */}
                 </div>
-                <a onClick={() => navigate("/aboutus")} href="" className="default-btn">
+                {/* <a onClick={() => navigate("/aboutus")} href="" className="default-btn">
                   <span>About Us</span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

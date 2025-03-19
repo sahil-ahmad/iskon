@@ -23,7 +23,7 @@ const ContactUs = () => {
         <ul>
           <li>
             <i className="bx bx-location-plus" />
-            6890 Blvd, The Bronx, NY 1058 New York, USA
+            ISKCON, Chandrodaya Mandir, Mayapur, West Bengal 741313, India
           </li>
           <li>
             <i className="bx bx-envelope" />
@@ -178,19 +178,19 @@ const ContactUs = () => {
             <li className="location">
               <i className="bx bx-location-plus" />
               <h3>Company Location</h3>
-              6890 Blvd, The Bronx, NY 1058 New York, USA
-            </li>
-            <li>
-              <i className="bx bx-envelope" />
-              <h3>Phone Number</h3>
-              <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#cea6aba2a2a18ebaa7afa0bde0ada1a3"><span className="__cf_email__" data-cfemail="264e434a4a4966524f4748550845494b">[email&nbsp;protected]</span></a>
-              <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#ff96919990bf8b969e918cd19c9092"><span className="__cf_email__" data-cfemail="4c25222a230c38252d223f622f2321">[email&nbsp;protected]</span></a>
+              ISKCON, Chandrodaya Mandir, Mayapur, West Bengal 741313, India
             </li>
             <li>
               <i className="bx bx-phone-call" />
+              <h3>Phone Number</h3>
+              <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#cea6aba2a2a18ebaa7afa0bde0ada1a3"><span className="__cf_email__" data-cfemail="264e434a4a4966524f4748550845494b">+91 94747 51202</span></a>
+              <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#ff96919990bf8b969e918cd19c9092"><span className="__cf_email__" data-cfemail="4c25222a230c38252d223f622f2321">+91 9920182562 </span></a>
+            </li>
+            <li>
+              <i className="bx bx-envelope" />
               <h3>Our Email Address</h3>
-              <a href="tel:+1-(123)-456-7899">+1 (123) 456-7899</a>
-              <a href="tel:+1-(514)-312-6688">+1 (514) 312-6688</a>
+              <a href="spdcp.seva@gmail.com">spdcp.seva@gmail.com</a>
+              {/* <a href="tel:+1-(514)-312-6688">+1 (514) 312-6688</a> */}
             </li>
           </ul>
         </div>

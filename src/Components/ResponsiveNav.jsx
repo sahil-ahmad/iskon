@@ -31,11 +31,11 @@ export default function AnchorTemporaryDrawer() {
     const menuItems = [
         { name: 'Home', path: '/' },
         { name: 'About', path: '/aboutus' },
-        { name: 'Sucess stories', path: '/events' },
-        { name: 'Key Features', path: '/services' },
+        { name: 'Implementation Process', path: '/implementationProcess' },
+        { name: 'Success Stories', path: '/events' },
         
         { name: 'Contact Us', path: '/contactus' },
-        { name: 'Donation', path: '/donation' }
+       
     ];
 
     const list = (anchor) => (

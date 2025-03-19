@@ -22,17 +22,17 @@ const Footer = () => {
           <ul className="address">
             <li className="location">
               <i className="bx bxs-location-plus" />
-              6890 Blvd, The Bronx, NY 1058 New York, USA
+              ISKCON, Chandrodaya Mandir, Mayapur, West Bengal 741313, India
             </li>
             <li>
               <i className="bx bxs-envelope" />
-              <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#9df5f8f1f1f2dde9f4fcf3eeb3fef2f0"><span className="__cf_email__" data-cfemail="fd9598919192bd89949c938ed39e9290">[email&nbsp;protected]</span></a>
-              <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#adc4c3cbc2edd9c4ccc3de83cec2c0"><span className="__cf_email__" data-cfemail="cea7a0a8a18ebaa7afa0bde0ada1a3">[email&nbsp;protected]</span></a>
+              <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#9df5f8f1f1f2dde9f4fcf3eeb3fef2f0"><span className="__cf_email__" data-cfemail="fd9598919192bd89949c938ed39e9290">spdcp.seva@gmail.com</span></a>
+              {/* <a href="https://templates.hibootstrap.com/cdn-cgi/l/email-protection#adc4c3cbc2edd9c4ccc3de83cec2c0"><span className="__cf_email__" data-cfemail="cea7a0a8a18ebaa7afa0bde0ada1a3">[email&nbsp;protected]</span></a> */}
             </li>
             <li>
               <i className="bx bxs-phone-call" />
-              <a href="tel:+1-(123)-456-7899">+1 (123) 456-7899</a>
-              <a href="tel:+1-(514)-312-6688">+1 (514) 312-6688</a>
+              <a href="tel:+1-(123)-456-7899">+91 94747 51202</a>
+              <a href="tel:+1-(514)-312-6688">+91 9920182562 </a>
             </li>
           </ul>
         </div>

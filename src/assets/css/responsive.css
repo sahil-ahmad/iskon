@@ -1217,6 +1217,7 @@
     .faq-contact-area #contactForm {
         padding: 30px
     }
+    
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px) {
@@ -1344,6 +1345,7 @@
         height: 50px;
         line-height: 50px
     }
+    
 }
 
 @media only screen and (min-width:1700px) {
@@ -1494,4 +1496,9 @@
     .banner-img{
         display: none;
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+>>>>>>> d76d313 (iskon)

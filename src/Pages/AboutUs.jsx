@@ -8,7 +8,7 @@ const AboutUs = () => {
   return (
     <div>
 
-      <div className="page-title-area bg-1">
+      <div className="page-title-area bg-1 " >
         <div className="container">
           <div className="page-title-content">
             <h2>About Us</h2>
@@ -43,7 +43,7 @@ const AboutUs = () => {
                     <ul>
                       <li>
                         <i className="bx bx-check" />
-                        <span>How To Become Volante</span>
+                        <span>Meet the team</span>
                       </li>
                       <li>
                         <i className="bx bx-check" />
@@ -51,7 +51,7 @@ const AboutUs = () => {
                       </li>
                     </ul>
                   </div>
-                  <div className="col-lg-6">
+                  {/* <div className="col-lg-6">
                     <ul>
                       <li>
                         <i className="bx bx-check" />
@@ -65,9 +65,9 @@ const AboutUs = () => {
                   </div>
 
                 </div>
-                <a href="" className="default-btn">
+                {/* <a href="" className="default-btn">
                   <span>About Us</span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>
