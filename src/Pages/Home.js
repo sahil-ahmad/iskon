@@ -343,7 +343,7 @@ const Home = () => {
                 </div>
                 <div className="col-lg-6" >
                   <div className="banner-img" >
-                    <img style={{ height: '90vh' }} src={prabhupada1} alt="Image" />
+                    {/* <img style={{ height: '90vh' }} src={prabhupada1} alt="Image" /> */}
                     {/* <div className="video-btn-2 wow zoomIn" data-wow-delay="1s">
                       <a href="https://www.youtube.com/watch?v=CILPJViYk1E" className="popup-youtube">
                         <span />

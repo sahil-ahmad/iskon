@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 
 const DiscipleRegistration = () => {
+  const [showOtherInput, setShowOtherInput] = useState(false);
+  const [otherText, setOtherText] = useState("");
+
+  const handleSelectChange = (event) => {
+    setShowOtherInput(event.target.value === "Other");
+  };
+
   return (
     <div>
       <div className="page-title-area bg-1">
@@ -20,8 +27,8 @@ const DiscipleRegistration = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-12 col-md-6 p-0">
-              <div className="all-help-content">
-                <form className="help-form">
+              <div className="all-help-content " style={{display:'flex', justifyContent:'center'}}>
+                {/* <form className="help-form">
                   <div>
                     <h3 style={{ textDecoration: "underline" }}>
                       Disciple Registration Referral Form
@@ -122,12 +129,16 @@ const DiscipleRegistration = () => {
                         />
                       </p>
 
-                      <h4 style={{marginTop:'2rem'}}>Part 2: Confirmation by Srila Prabhupada Disciple or Authority</h4>
+                      <h4 style={{ marginTop: "2rem" }}>
+                        Part 2: Confirmation by Srila Prabhupada Disciple or
+                        Authority
+                      </h4>
                       <p>
-                      To be filled out by a disciple of Srila Prabhupada or an authorized person.
+                        To be filled out by a disciple of Srila Prabhupada or an
+                        authorized person.
                       </p>
                       <p>
-                      Name of Referring Disciple/Authority: 
+                        Name of Referring Disciple/Authority:
                         <input
                           type="email"
                           style={{
@@ -138,7 +149,7 @@ const DiscipleRegistration = () => {
                         />
                       </p>
                       <p>
-                      Position/Title: 
+                        Position/Title:
                         <input
                           type="email"
                           style={{
@@ -149,7 +160,7 @@ const DiscipleRegistration = () => {
                         />
                       </p>
                       <p>
-                      Contact Number:
+                        Contact Number:
                         <input
                           type="number"
                           style={{
@@ -160,7 +171,7 @@ const DiscipleRegistration = () => {
                         />
                       </p>
                       <p>
-                      Email Address: 
+                        Email Address:
                         <input
                           type="email"
                           style={{
@@ -170,45 +181,191 @@ const DiscipleRegistration = () => {
                           }}
                         />
                       </p>
-                      <p><span style={{fontWeight:'bold'}}>Confirmation Statement:</span>
-                       I, the undersigned, confirm that the above-named individual (Applicant) is known to me as an initiated disciple of HDG Srila Prabhupada and has a genuine need for assistance.</p>
+                      <p>
+                        <span style={{ fontWeight: "bold" }}>
+                          Confirmation Statement:
+                        </span>
+                        I, the undersigned, confirm that the above-named
+                        individual (Applicant) is known to me as an initiated
+                        disciple of HDG Srila Prabhupada and has a genuine
+                        need for assistance.
+                      </p>
 
-                       <p style={{marginTop:'5rem'}}>Signature of Referrer:</p>
-                       <p>Date:</p>
-                       <p>Applicant’s Signature:</p>
-                       <p>Date:</p>
-                      {/* <p style={{ fontSize: '1rem', fontWeight: '700' }}>Eligibility Criteria</p>
-                                            <p>To proceed, please ensure the following:
-                                            </p>
-                                            <ol>
-                                                <li>Initiation Confirmation: You must have received initiation directly from Srila Prabhupada.</li>
-                                                <li>Referral/Endorsement: A confirmation from an existing Srila Prabhupada disciple, your local ISKCON temple president or senior devotee is required.
-                                                </li>
-                                            </ol>
-
-                                            <p style={{ fontSize: '1rem', fontWeight: '700' }}>How It Works</p>
-                                            <ol>
-                                                <li>Step 1: Complete the form with your personal and initiation details.</li>
-                                                <li>Step 2: Provide the email address of your referring authority (an existing Srila Prabhupada disciple, senior devtoee or temple president).</li>
-                                                <li>Step 3: An automatic email will be sent to your referring authority with a link to complete the relevant section electronically.</li>
-                                                <li>Step 4: Once they complete the referral, your application will be reviewed.</li>
-                                            </ol>
-                                            <ul>
-                                                <li>After your referring authority submits their confirmation, we will process your application.</li>
-                                                <li>You will receive a notification of approval or follow-up within 7-10 working days.</li>
-                                                
-                                            </ul>
-                                            <p style={{ fontSize: '1rem', fontWeight: '700' }}>Need Assistance?
-                                            </p>
-                                            <p>If you have questions or need guidance, please contact us at spdcp.seva@gmail.com.
-                                            </p>
-                                            
-                                            <p style={{ fontSize: '1rem', fontWeight: '700' }}>Join the Family
-                                            </p>
-                                            <p>We are honored to have you as part of Srila Prabhupada’s spiritual legacy. Let us work together to serve his mission and spread Krishna Consciousness worldwide.
-                                            </p> */}
+                      <p style={{ marginTop: "5rem" }}>
+                        Signature of Referrer:
+                      </p>
+                      <p>Date:</p>
+                      <p>Applicant’s Signature:</p>
+                      <p>Date:</p>
                     </div>
                   </div>
+                </form> */}
+
+                <form className="volunteer-join">
+                  <div className="volunteer-title">
+                    <h3>Disciple Registration Referral Form</h3>
+                    <div>
+                    <p>Part 1: Applicant Information</p>
+                    <p>
+                      To be filled out by the person registering as a disciple.
+                    </p>
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col-12">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="First-Name"
+                          placeholder="Full Name"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="Email"
+                          placeholder="Date Of Birth"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="Number"
+                          placeholder="Address"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="Address"
+                          placeholder="Contact Number"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="Address"
+                          placeholder="Email"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="Address"
+                          placeholder="email of the temple president"
+                        />
+                      </div>
+                    </div>
+                    <p style={{ textAlign: "left" }}>Initiation Details:</p>
+                    <div className="col-12">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="Address"
+                          placeholder="Date of Initiation"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="Address"
+                          placeholder="Name Given at initation"
+                        />
+                      </div>
+                    </div>
+                    <button type="submit" className="default-btn">
+                    <span>Submit</span>
+                  </button>
+                    <div style={{marginTop:'2rem'}}>
+                    <p style={{ textAlign: "left" }}>
+                      Part 2: Confirmation by Srila Prabhupada Disciple or
+                      Authority
+                    </p>
+                    <p style={{ textAlign: "left" }}>
+                      To be filled out by a disciple of Srila Prabhupada or an
+                      authorized person.
+                    </p>
+                    </div>
+                    <div className="col-12">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="Address"
+                          placeholder="Name of Referring Disciple/Authority"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="Address"
+                          placeholder="Position/Title"
+                        />
+                      </div>
+                    </div>
+                    <div className="col-12">
+                      <div className="form-group">
+                        <input
+                          type="text"
+                          className="form-control"
+                          id="Address"
+                          placeholder="Contact Number"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-12">
+                    <div className="form-group">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="Address"
+                        placeholder="Email Address"
+                      />
+                    </div>
+                  </div>
+                  <div style={{textAlign:'left'}}>
+                    <p>
+                      <span style={{ fontWeight: "bold" }}>
+                        Confirmation Statement:
+                      </span>
+                      I, the undersigned, confirm that the above-named
+                      individual (Applicant) is known to me as an initiated
+                      disciple of HDG Srila Prabhupada and has a genuine
+                      need for assistance.
+                    </p>
+
+                    <p style={{ marginTop: "2rem" }}>Signature of Referrer:</p>
+                    <p>Date:</p>
+                    <p>Applicant’s Signature:</p>
+                    <p>Date:</p>
+                  </div>
+                  <button type="submit" className="default-btn">
+                    <span>Submit</span>
+                  </button>
                 </form>
               </div>
             </div>

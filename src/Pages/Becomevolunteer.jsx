@@ -394,7 +394,7 @@ const Becomevolunteer = () => {
                         Financial Assistance
                       </option>
                       <option value="Healthcare Coordination">
-                        Healthcare Coordination
+                      Medical/health practioner
                       </option>
                       <option value="Emotional Support">
                         Emotional and Spiritual Support
