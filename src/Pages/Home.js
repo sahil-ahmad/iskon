@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useRef,useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import { GiHealthNormal } from "react-icons/gi";
@@ -207,6 +207,29 @@ const Home = () => {
   };
 
 
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const playVideo = () => {
+      if (videoRef.current) {
+        videoRef.current.muted = false; // ऑडियो चालू करें
+        videoRef.current.play().catch(error => {
+          console.log("Autoplay Blocked:", error);
+        });
+      }
+    };
+
+    playVideo();
+
+    // अगर यूजर पेज पर क्लिक करता है, तो दोबारा प्ले करने की कोशिश करें
+    document.addEventListener("click", playVideo);
+
+    return () => {
+      document.removeEventListener("click", playVideo);
+    };
+  }, []);
+
+
   return (
     <div>
       <div className="sidebar-modal">
@@ -360,11 +383,16 @@ const Home = () => {
           </div>
         </div>
         <div className="banner-bg-shape-1">
+      <video 
+        ref={videoRef}
+        src={bannervideo} 
+        autoPlay 
+        loop 
+        style={{ width: '100%', opacity: "0.8" }} 
+        className='videobanner'
+      />
+    </div>
 
-          {/* <img src={homemain} alt="Image" /> */}
-          <video src={bannervideo} autoPlay loop muted style={{ width: '100%', opacity: "0.8" }} className='videobanner' />
-
-        </div>
       </section>
       <section className="about-area pt-100 pb-70">
         <div className="container">
