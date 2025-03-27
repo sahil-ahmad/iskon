@@ -438,7 +438,7 @@ const Home = () => {
         src={bannervideo} 
         autoPlay 
         loop 
-        style={{ width: '100%', opacity: "0.8" }} 
+        style={{ width: '100%', opacity: ".8" }} 
         className='videobanner'
       />
     </div>
