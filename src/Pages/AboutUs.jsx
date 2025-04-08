@@ -32,13 +32,21 @@ const AboutUs = () => {
             <div className="col-lg-6">
               <div className="about-content">
                 <span className="top-title">About</span>
-                <h2>Introduction to Srila Prabhupada Disciples Care Program</h2>
-                <p>The Srila Prabhupada Disciple Care Program is a heartfelt initiative inspired by the visionary guidance of His Holiness Jayapataka Swami Maharaja and His Holiness Gopal Krishna Goswami Maharaja. This program is dedicated to honoring and supporting the disciples of His Divine Grace A.C. Bhaktivedanta Swami Srila Prabhupada, the founder-acharya of ISKCON.</p>
+                <h2 >Introduction to Srila Prabhupada Disciples Care Program</h2>
+                <p style={{fontSize:'18px'}}>The Srila Prabhupada Disciple Care Program is a heartfelt initiative inspired by the visionary guidance of His Holiness Jayapataka Swami Maharaja and His Holiness Gopal Krishna Goswami Maharaja. This program is dedicated to honoring and supporting the disciples of His Divine Grace A.C. Bhaktivedanta Swami Srila Prabhupada, the founder-acharya of ISKCON.</p>
                 <div className="row">
-                  <div className="col-lg-6">
-                    <ul>
-                      <li><i className="bx bx-check" /> <span>Meet the Team</span></li>
-                      <li><i className="bx bx-check" /> <span>Meet the volunteers</span></li>
+                <div className="col-lg-12">
+                    <ul style={{display:'flex'}}>
+                      <li>
+                        {/* <i className="bx bx-check" /> */}
+                        <button style={{padding:'.5rem 1rem',backgroundColor:'#f99115',color:'white',borderRadius:'10px'}}>    <span>Meet the team</span></button>
+                    
+                      </li>
+                      <li>
+                        {/* <i className="bx bx-check" /> */}
+                        <button style={{padding:'.5rem 1rem',backgroundColor:'#f99115',color:'white',borderRadius:'10px'}}>     <span>Meet the volunteers</span></button>
+                       
+                      </li>
                     </ul>
                   </div>
                   {/* <div className="col-lg-6">

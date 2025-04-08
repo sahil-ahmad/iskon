@@ -116,7 +116,7 @@ const Header = () => {
                     <li className="nav-item">
                       <a onClick={() => navigate("/contactus")} href="" className="nav-link">Contact Us</a>
                     </li>
-                    <li className="nav-item">
+                    {/* <li className="nav-item">
                       <a href="" className="nav-link">
                       Useful Resources
                         <i className="bx bx-chevron-down" />
@@ -142,9 +142,7 @@ const Header = () => {
                             </li>
                           </ul>
                         </li>
-                        {/* <li className="nav-item">
-                          <a onClick={() => navigate("/faq")} href="" className="nav-link">FAQ</a>
-                        </li> */}
+                     
                         <li className="nav-item">
                           <a onClick={() => navigate("/privacypolicy")} href="" className="nav-link">Privacy Policy</a>
                         </li>
@@ -154,14 +152,15 @@ const Header = () => {
                         <li className="nav-item">
                           <a onClick={() => navigate("/comingsoon")} href="" className="nav-link">Coming Soon</a>
                         </li>
-                        {/* <li className="nav-item">
-                          <a onClick={() => navigate("/error")} href="" className="nav-link">404 Error Page</a>
-                        </li> */}
+                    
                       </ul>
-                    </li>
+                    </li> */}
                   </ul>
                  
-
+<div style={{display:'flex', gap:'10px'}}>
+<button onClick={() => navigate("/login")} style={{padding:'.5rem 1rem',backgroundColor:'#f99115',color:'white',borderRadius:'10px'}}>     <span>SignIn</span></button>
+<button onClick={() => navigate("/register")} style={{padding:'.5rem 1rem',backgroundColor:'#f99115',color:'white',borderRadius:'10px'}}>     <span>SignUp</span></button>
+</div>
                 </div>
               </nav>
             </div>

@@ -120,7 +120,7 @@ const ContactUs = () => {
         <div className="col-lg-8">
           <div className="contacts-form">
             <div className="contact-title">
-              <h2>Drop us message for any query</h2>
+              <h2>Drop us a message for any query</h2>
             </div>
             <form id="contactForm">
               <div className="row">
@@ -197,8 +197,9 @@ const ContactUs = () => {
       </div>
     </div>
   </section>
-  <div className="map-area">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96573.31103674119!2d-73.91097366523668!3d40.85176866829554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c28b553a697cb1%3A0x556e43a78ff15c77!2sThe%20Bronx%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1599153418461!5m2!1sen!2sbd" />
+  <div className="map-area" style={{padding:'5rem'}}>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.9881152722187!2d88.38596427532597!3d23.424796478894006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f91c33012b07cf%3A0x9e0e052b1e9b66ad!2sISKCON%20Mayapur!5e0!3m2!1sen!2sin!4v1743665126094!5m2!1sen!2sin" />
+
   </div>
 </div>
 

@@ -27,7 +27,10 @@ const DiscipleRegistration = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-lg-12 col-md-6 p-0">
-              <div className="all-help-content " style={{display:'flex', justifyContent:'center'}}>
+              <div
+                className="all-help-content "
+                style={{ display: "flex", justifyContent: "center" }}
+              >
                 {/* <form className="help-form">
                   <div>
                     <h3 style={{ textDecoration: "underline" }}>
@@ -205,10 +208,11 @@ const DiscipleRegistration = () => {
                   <div className="volunteer-title">
                     <h3>Disciple Registration Referral Form</h3>
                     <div>
-                    <p>Part 1: Applicant Information</p>
-                    <p>
-                      To be filled out by the person registering as a disciple.
-                    </p>
+                      <p>Applicant Information</p>
+                      <p>
+                        To be filled out by the person registering as a
+                        disciple.
+                      </p>
                     </div>
                   </div>
                   <div className="row">
@@ -257,8 +261,8 @@ const DiscipleRegistration = () => {
                         <input
                           type="text"
                           className="form-control"
-                          id="Address"
-                          placeholder="Email"
+                          id="Email"
+                          placeholder="Email of the Disciple"
                         />
                       </div>
                     </div>
@@ -293,18 +297,21 @@ const DiscipleRegistration = () => {
                         />
                       </div>
                     </div>
-                    <button type="submit" className="default-btn">
-                    <span>Submit</span>
-                  </button>
-                    <div style={{marginTop:'2rem'}}>
-                    <p style={{ textAlign: "left" }}>
-                      Part 2: Confirmation by Srila Prabhupada Disciple or
-                      Authority
-                    </p>
-                    <p style={{ textAlign: "left" }}>
-                      To be filled out by a disciple of Srila Prabhupada or an
-                      authorized person.
-                    </p>
+                    <div style={{textAlign:'left',marginTop:'1rem'}}>
+                    {/* <button type="submit" className="default-btn">
+                      <span>Submit</span>
+                    </button> */}
+                    <button style={{padding:'.5rem 4rem',backgroundColor:'#f99115',color:'white',borderRadius:'10px'}}>     <span>Submit</span></button>
+                    </div>
+                    <div style={{ marginTop: "2rem" }}>
+                      <p style={{ textAlign: "left" }}>
+                        Confirmation by Srila Prabhupada Disciple or
+                        Authority
+                      </p>
+                      <p style={{ textAlign: "left" }}>
+                        To be filled out by a disciple of Srila Prabhupada or an
+                        authorized person.
+                      </p>
                     </div>
                     <div className="col-12">
                       <div className="form-group">
@@ -347,7 +354,7 @@ const DiscipleRegistration = () => {
                       />
                     </div>
                   </div>
-                  <div style={{textAlign:'left'}}>
+                  <div style={{ textAlign: "left" }}>
                     <p>
                       <span style={{ fontWeight: "bold" }}>
                         Confirmation Statement:
@@ -363,9 +370,12 @@ const DiscipleRegistration = () => {
                     <p>Applicant’s Signature:</p>
                     <p>Date:</p>
                   </div>
-                  <button type="submit" className="default-btn">
+                  <div style={{textAlign:'left',marginTop:'2rem'}}>
+                  <button style={{padding:'.5rem 4rem',backgroundColor:'#f99115',color:'white',borderRadius:'10px'}}>     <span>Submit</span></button>
+                  {/* <button type="submit" className="default-btn" >
                     <span>Submit</span>
-                  </button>
+                  </button> */}
+                  </div>
                 </form>
               </div>
             </div>

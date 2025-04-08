@@ -236,6 +236,43 @@ const Home = () => {
     };
   }, []);
 
+
+
+
+   const [selectedOptions, setSelectedOptions] = useState([]);
+    const [showDropdown, setShowDropdown] = useState(false);
+    const [otherText, setOtherText] = useState("");
+    const [showOtherInput, setShowOtherInput] = useState(false);
+  
+    const options = [
+      "Financial Assistance",
+      "Medical/health practitioner",
+      "Emotional and Spiritual Support",
+      "Comprehensive Health Assessments",
+      "Community Building Activities",
+      "Relocation Assistance",
+      "Other",
+    ];
+  
+    const handleOptionClick = (option) => {
+      let newSelectedOptions = [...selectedOptions];
+  
+      if (newSelectedOptions.includes(option)) {
+        newSelectedOptions = newSelectedOptions.filter((item) => item !== option);
+      } else {
+        newSelectedOptions.push(option);
+      }
+  
+      setSelectedOptions(newSelectedOptions);
+  
+      if (newSelectedOptions.includes("Other")) {
+        setShowOtherInput(true);
+      } else {
+        setShowOtherInput(false);
+        setOtherText(""); // Reset input when "Other" is deselected
+      }
+    };
+
   return (
     <div>
       <div className="sidebar-modal">
@@ -352,97 +389,68 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <section className="banner-area">
-        <div className="d-table">
-          <div className="d-table-cell">
-            <div className="container">
-              <div className="row align-items-center">
-                <div className="col-lg-6">
-                  <div className="banner-content">
-                    <h1
-                      className="wow animate__animated animate__fadeInDown"
-                      data-wow-delay="1s"
+       <section className="banner-area">
+      <div className="d-table">
+        <div className="d-table-cell">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6">
+                <div className="banner-content">
+                  <h1 className="wow animate__animated animate__fadeInDown" data-wow-delay="1s">
+                    Srila Prabhupada Disciples Care Program
+                  </h1>
+                  <p className="wow animate__animated animate__fadeInLeft" data-wow-delay="1s">
+                    Without the devotees, what would I do? I am simply sitting here alone.
+                    My Guru Maharaj ordered me to accomplish this mission, and without
+                    the help of my disciples, how could I do it? Therefore, they are all my
+                    heart and soul. I am very much indebted to all my disciples.
+                    <br />
+                    —Srila Prabhupada (Letter to HH Jayapataka Swami, 24th October 1976)
+                  </p>
+                  <div className="banner-btn wow animate__animated animate__fadeInUp" data-wow-delay="1s">
+                    <a
+                      onClick={(e) => {
+                        e.preventDefault();
+                        handleButtonClick();
+                      }}
+                      href="#"
+                      className="default-btn"
                     >
-                      Srila Prabhupada Disciples Care Program
-                    </h1>
-                    <p
-                      className="wow animate__animated animate__fadeInLeft"
-                      data-wow-delay="1s"
-                    >
-                      Without the devotees, what would I do? I am simply sitting
-                      here alone. My Guru Maharaj ordered me to accomplish this
-                      mission, and without the help of my disciples, how could I
-                      do it? Therefore, they are all my heart and soul. I am
-                      very much indebted to all my disciples.
-                      <br />
-                      —Srila Prabhupada (Letter to HH Jayapataka Swami, 24th
-                      October 1976)
-                    </p>
-                    <div
-                      className="banner-btn wow animate__animated animate__fadeInUp"
-                      data-wow-delay="1s"
-                    >
-                      <a
-                        onClick={(e) => {
-                          e.preventDefault();
-                          handleButtonClick();
-                        }}
-                        href="#"
-                        className="default-btn"
-                      >
-                        <span>How to get involved</span>
-                      </a>
-                      {/* Render the list conditionally */}
-                      {showList && (
-                        <ul className="involvement-list">
-                          <li onClick={() => navigate("/discipleRegistration")}>
-                            SP Disciple
-                          </li>
-                          <li onClick={() => navigate("/Volunteer")}>
-                            Become a Volunteer
-                          </li>
-                          <li onClick={() => navigate("/donation")}>
-                            Donation
-                          </li>
-                          <li
-                            onClick={() => navigate("/implementationProcess")}
-                          >
-                            Become a host{" "}
-                          </li>
-                        </ul>
-                      )}
-                    </div>
+                      <span>How to get involved</span>
+                    </a>
+                    {/* Render the list conditionally */}
+                    {showList && (
+                      <ul className="involvement-list">
+                        <li onClick={() => navigate("/discipleRegistration")}>SP Disciple</li>
+                        <li onClick={() => navigate("/Volunteer")}>Become a Volunteer</li>
+                        <li onClick={() => navigate("/donation")}>Donation</li>
+                        <li onClick={() => navigate("/implementationProcess")}>Become a host</li>
+                      </ul>
+                    )}
                   </div>
                 </div>
-                <div className="col-lg-6">
-                  <div className="banner-img">
-                    {/* <img style={{ height: '90vh' }} src={prabhupada1} alt="Image" /> */}
-                    {/* <div className="video-btn-2 wow zoomIn" data-wow-delay="1s">
-                      <a href="https://www.youtube.com/watch?v=CILPJViYk1E" className="popup-youtube">
-                        <span />
-                        <span />
-                        <span />
-                        <span />
-                        <i className="flaticon-play-button" />
-                      </a>
-                    </div> */}
-                  </div>
+              </div>
+              <div className="col-lg-6">
+                <div className="banner-img">
+                  {/* Image or Additional Content Can Go Here */}
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="banner-bg-shape-1">
-      <video 
-        ref={videoRef}
-        src={bannervideo} 
-        autoPlay 
-        loop 
-        style={{ width: '100%', opacity: ".8" }} 
-        className='videobanner'
-      />
-    </div>
-      </section>
+      </div>
+      <div className="banner-bg-shape-1">
+        <video
+          ref={videoRef}
+          src={bannervideo}
+          autoPlay
+          loop
+          playsInline
+          style={{ width: "100%", opacity: ".8" }}
+          className="videobanner"
+        />
+      </div>
+    </section>
       <section className="about-area pt-100 pb-70">
         <div className="container">
           <div className="row align-items-center">
@@ -459,19 +467,39 @@ const Home = () => {
               <div className="about-content">
                 <span className="top-title">About</span>
                 <h2>Introduction to Srila Prabhupada Disciples Care Program</h2>
-                <p>
+                <p style={{ fontSize: "18px" }}>
                   inspired by HH Jayapataka Swami and HH GopalKrishna Maharaja
                 </p>
                 <div className="row">
-                  <div className="col-lg-6">
-                    <ul>
+                  <div className="col-lg-12">
+                    <ul style={{ display: "flex" }}>
                       <li>
-                        <i className="bx bx-check" />
-                        <span>Meet the team</span>
+                        {/* <i className="bx bx-check" /> */}
+                        <button
+                          style={{
+                            padding: ".5rem 1rem",
+                            backgroundColor: "#f99115",
+                            color: "white",
+                            borderRadius: "10px",
+                          }}
+                        >
+                          {" "}
+                          <span>Meet the team</span>
+                        </button>
                       </li>
                       <li>
-                        <i className="bx bx-check" />
-                        <span>Meet the volunteers</span>
+                        {/* <i className="bx bx-check" /> */}
+                        <button
+                          style={{
+                            padding: ".5rem 1rem",
+                            backgroundColor: "#f99115",
+                            color: "white",
+                            borderRadius: "10px",
+                          }}
+                        >
+                          {" "}
+                          <span>Meet the volunteers</span>
+                        </button>
                       </li>
                     </ul>
                   </div>
@@ -887,12 +915,12 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <div className="line">
-          <p onClick={() => navigate("/donation")} style={{ color: "white" }}>
-            Become a Donor{" "}
-            <IoIosArrowRoundForward style={{ fontSize: "35px" }} />
-          </p>
-        </div>
+        
+          <div style={{textAlign:'center'}}>
+            <button onClick={() => navigate("/donation")} style={{padding:'.5rem 1rem',backgroundColor:'#f99115',color:'white',borderRadius:'10px'}}>     <span>Become a Donor{" "}
+            <IoIosArrowRoundForward style={{ fontSize: "35px" }} /></span></button>
+            </div>
+        
       </section>
       <section className="help-people-area">
         <div className="container-fluid">
@@ -912,7 +940,7 @@ const Home = () => {
             <div className="col-lg-6 col-md-6 p-0">
               <div className="all-help-content">
                 <div className="people-content">
-                  <h2>Establishment of ISKCON:</h2>
+                  <h2>Establishment of ISKCON</h2>
                   <p>
                     {" "}
                     Perhaps the most remarkable success story of Srila
@@ -931,7 +959,7 @@ const Home = () => {
             <div className="col-lg-6 col-md-6 p-0">
               <div className="all-help-content">
                 <div className="people-content">
-                  <h2>Writing and Publishing:</h2>
+                  <h2>Writing and Publishing</h2>
                   <p>
                     {" "}
                     Srila Prabhupada translated and wrote commentaries on
@@ -965,7 +993,7 @@ const Home = () => {
             <div className="col-lg-6 col-md-6 p-0">
               <div className="all-help-content">
                 <div className="people-content">
-                  <h2>Temple Establishments:</h2>
+                  <h2>Temple Establishments</h2>
                   <p>
                     Srila Prabhupada oversaw the establishment of numerous
                     temples and ashrams around the world, where devotees could
@@ -980,7 +1008,7 @@ const Home = () => {
             <div className="col-lg-6 col-md-6 p-0">
               <div className="all-help-content">
                 <div className="people-content">
-                  <h2>Food Distribution:</h2>
+                  <h2>Food Distribution</h2>
                   <p>
                     {" "}
                     Srila Prabhupada initiated the distribution of prasadam
@@ -1011,7 +1039,7 @@ const Home = () => {
             <div className="col-lg-6 col-md-6 p-0">
               <div className="all-help-content">
                 <div className="people-content">
-                  <h2>Cultural Influence: </h2>
+                  <h2>Cultural Influence </h2>
                   <p>
                     {" "}
                     Srila Prabhupada's teachings and the Hare Krishna movement
@@ -1169,16 +1197,12 @@ const Home = () => {
             ))}
           </div>
         </div>
-        ;
-        <div className="line">
-          <p
-            onClick={() => navigate("/becomevolunteer")}
-            style={{ color: "white" }}
-          >
-            Become a Volunteer{" "}
-            <IoIosArrowRoundForward style={{ fontSize: "35px" }} />
-          </p>
-        </div>
+        
+       
+        <div style={{textAlign:'center'}}>
+            <button onClick={() => navigate("/becomevolunteer")} style={{padding:'.5rem 1rem',backgroundColor:'#f99115',color:'white',borderRadius:'10px'}}>     <span>Become a Volunteer{" "}
+            <IoIosArrowRoundForward style={{ fontSize: "35px" }} /></span></button>
+            </div>
       </section>
       {/* <section className="volunteer-join-area volunteer-join-area-page ptb-100">
         <div className="container">
@@ -1223,7 +1247,12 @@ const Home = () => {
         <div className="container">
           <form className="volunteer-join">
             <div className="volunteer-title">
-              <h2>Join Our Volunteer Group For Serve Helpless</h2>
+              <h2>Volunteer Registration Form</h2>
+              <p style={{ marginTop: "2rem", textAlign: "center" }}>
+                Thank you for your willingness to serve Srila Prabhupada’s
+                disciples. Please fill out the form below to indicate your
+                interest and the areas where you’d like to contribute.
+              </p>
             </div>
             <div className="row">
               <div className="col-12">
@@ -1504,7 +1533,7 @@ const Home = () => {
               </div>
               <div className="col-12 availability ">
                 <div className="form-group">
-                  {/* <label for="availability" className="form-group" >Availability:</label> */}
+               
                   <select
                     className="form-control"
                     id="Country"
@@ -1517,90 +1546,71 @@ const Home = () => {
                   </select>
                 </div>
               </div>
+             
               <div className="col-12">
                 <div className="form-group">
-                  {/* <label for="availability" className="form-group" >Availability:</label> */}
-                  <select
-                    className="form-control"
-                    id="Country"
-                    style={{ backgroundColor: "#F99115", color: "#fff" }}
-                  >
-                    <option value="">Preferred Mode of Service</option>
-                    <option value="5-10 hours/week">
+                  <div className="custom-dropdown">
+                    <div
+                      className="form-control"
+                      style={{
+                        backgroundColor: "#F99115",
+                        color: "#fff",
+                        cursor: "pointer",
+                        textAlign: "left",
+                      }}
+                      onClick={() => setShowDropdown(!showDropdown)}
+                    >
+                      {selectedOptions.length > 0
+                        ? selectedOptions.join(", ")
+                        : "Areas of Interest"}
+                    </div>
+
+                    {showDropdown && (
+                      <div
+                        className="dropdown-options"
+                        style={{
+                          backgroundColor: "#F99115",
+                          padding: "10px",
+                          borderRadius: "5px",
+                          textAlign: "left",
+                        }}
+                      >
+                        {options.map((option, index) => (
+                          <div
+                            key={index}
+                            onClick={() => handleOptionClick(option)}
+                            style={{
+                              padding: "5px",
+                              cursor: "pointer",
+                              color: "#fff",
+                            }}
+                          >
+                            <input
+                              type="checkbox"
+                              checked={selectedOptions.includes(option)}
+                              readOnly
+                            />
+                            <span style={{ marginLeft: "5px" }}>{option}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
+
+                    {showOtherInput && (
                       <input
-                        type="radio"
-                        id="remote"
-                        name="modeOfService"
-                        value="Remote"
-                        required
+                        type="text"
+                        placeholder="Please specify"
+                        className="form-control mt-2"
+                        style={{ backgroundColor: "#fff", color: "#000" }}
+                        value={otherText}
+                        onChange={(e) => setOtherText(e.target.value)}
                       />
-                      <label for="remote">Remote</label>
-                    </option>
-                    <option value="10-20 hours/week">
-                      <input
-                        type="radio"
-                        id="inPerson"
-                        name="modeOfService"
-                        value="In-Person"
-                        required
-                      />
-                      <label for="inPerson">In-Person</label>
-                    </option>
-                  </select>
-                </div>
-              </div>
-              <div className="col-12">
-                <div className="form-group">
-                  {/* <label for="availability" className="form-group" >Availability:</label> */}
-                  <select
-                    className="form-control"
-                    id="Country"
-                    style={{ backgroundColor: "#F99115", color: "#fff" }}
-                  >
-                    <option value="">Areas of Interest</option>
-                    <option value="5-10 hours/week">
-                      <input
-                        type="checkbox"
-                        id="financialAssistance"
-                        name="areasOfInterest"
-                        value="Financial Assistance"
-                      />
-                      <label for="financialAssistance">
-                        Financial Assistance
-                      </label>
-                    </option>
-                    <option value="10-20 hours/week">
-                      <label for="healthcareCoordination">
-                        Healthcare Coordination
-                      </label>
-                    </option>
-                    <option value="10-20 hours/week">
-                      {" "}
-                      <label for="emotionalSupport">
-                        Emotional and Spiritual Support
-                      </label>
-                    </option>
-                    <option value="10-20 hours/week">
-                      {" "}
-                      <label for="healthAssessments">
-                        Comprehensive Health Assessments
-                      </label>
-                    </option>
-                    <option value="10-20 hours/week">
-                      <label for="communityBuilding">
-                        Community Building Activities
-                      </label>
-                    </option>
-                    <option value="10-20 hours/week">
-                      <label for="relocationAssistance">
-                        Relocation Assistance
-                      </label>
-                    </option>
-                  </select>
+                    )}
+                  </div>
                 </div>
               </div>
 
-              <div>
+              <div style={{ textAlign: "left" }}>
                 <label for="experience">
                   Do you have any relevant experience in the selected areas?
                 </label>
@@ -1615,7 +1625,7 @@ const Home = () => {
                   }}
                 ></textarea>
               </div>
-              <div>
+              <div style={{ textAlign: "left" }}>
                 <label for="motivation">
                   Why do you want to volunteer for this service?
                 </label>
@@ -1630,7 +1640,7 @@ const Home = () => {
                   }}
                 ></textarea>
               </div>
-              <div>
+              <div style={{ textAlign: "left" }}>
                 <label for="skills">
                   Do you have any specific skills (e.g., healthcare, event
                   planning, counseling)?
@@ -1647,7 +1657,13 @@ const Home = () => {
                 ></textarea>
               </div>
 
-              <div style={{ display: "flex", marginTop: "1rem" }}>
+              <div
+                style={{
+                  display: "flex",
+                  marginTop: "1rem",
+                  textAlign: "left",
+                }}
+              >
                 <input type="checkbox" id="consent" name="consent" required />
                 <label for="consent">
                   I agree to the terms and conditions and understand the
@@ -1655,71 +1671,25 @@ const Home = () => {
                 </label>
               </div>
             </div>
-            <button type="submit" className="default-btn">
-              <span>Submit</span>
-            </button>
+            <div style={{ textAlign: "left" }}>
+              <button
+                style={{
+                  padding: ".5rem 1rem",
+                  backgroundColor: "#f99115",
+                  color: "white",
+                  borderRadius: "10px",
+                }}
+              >
+                {" "}
+                <span>Meet the volunteers</span>
+              </button>
+            </div>
           </form>
         </div>
       </section>
 
-      {/* <section className="faq-area" style={{ paddingTop: '5rem' }}>
-        <div className="container">
-          <div className="section-title">
-            <h2>Frequently Asked Questions</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, perferendis facilis! Magni explicabo nam velit nulla officiis dolorum? Ducimus illum</p>
-          </div>
-          <div className="row align-items-center">
-            {accordionItems.map((item, index) => (
-              <div className="col-lg-6 mt-4" key={index}>
-                <div className="faq-accordion">
-                  <ul className="accordion">
-                    <li className="accordion-item">
-                      <a
-                        className={`accordion-title ${activeIndex === index ? 'active' : ''}`}
-                        href="javascript:void(0)"
-                        onClick={() => toggleAccordion(index)}
-                      >
-                        <i className="bx bx-plus" />
-                        {item.question}
-                      </a>
-                      <div className={`accordion-content ${activeIndex === index ? 'show' : ''}`}>
-                        <p>{item.content}</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
-      <div className="partner-area ptb-100">
-        <div className="container">
-          <div className="partner-slider owl-theme owl-carousel">
-            <div className="partner-item">
-              <a href="#">
-                <img src="assets/img/partner/partner-1.png" alt="Image" />
-              </a>
-            </div>
-            <div className="partner-item">
-              <a href="#">
-                <img src="assets/img/partner/partner-2.png" alt="Image" />
-              </a>
-            </div>
-            <div className="partner-item">
-              <a href="#">
-                <img src="assets/img/partner/partner-3.png" alt="Image" />
-              </a>
-            </div>
-            <div className="partner-item">
-              <a href="#">
-                <img src="assets/img/partner/partner-4.png" alt="Image" />
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    
     </div>
   );
 };

@@ -1,11 +1,38 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 
 const Becomevolunteer = () => {
-  const [showOtherInput, setShowOtherInput] = useState(false);
+  const [selectedOptions, setSelectedOptions] = useState([]);
+  const [showDropdown, setShowDropdown] = useState(false);
   const [otherText, setOtherText] = useState("");
+  const [showOtherInput, setShowOtherInput] = useState(false);
 
-  const handleSelectChange = (event) => {
-    setShowOtherInput(event.target.value === "Other");
+  const options = [
+    "Financial Assistance",
+    "Medical/health practitioner",
+    "Emotional and Spiritual Support",
+    "Comprehensive Health Assessments",
+    "Community Building Activities",
+    "Relocation Assistance",
+    "Other",
+  ];
+
+  const handleOptionClick = (option) => {
+    let newSelectedOptions = [...selectedOptions];
+
+    if (newSelectedOptions.includes(option)) {
+      newSelectedOptions = newSelectedOptions.filter((item) => item !== option);
+    } else {
+      newSelectedOptions.push(option);
+    }
+
+    setSelectedOptions(newSelectedOptions);
+
+    if (newSelectedOptions.includes("Other")) {
+      setShowOtherInput(true);
+    } else {
+      setShowOtherInput(false);
+      setOtherText(""); // Reset input when "Other" is deselected
+    }
   };
 
   return (
@@ -23,52 +50,13 @@ const Becomevolunteer = () => {
           </div>
         </div>
       </div>
-      {/* <section className="volunteer-join-area volunteer-join-area-page ptb-100">
-                <div className="container">
-                    <form className="volunteer-join">
-                        <div className="volunteer-title">
-                            <h2>Join Our Volunteer Group For Serve Helpless</h2>
-                        </div>
-                        <div className="row">
-                            <div className="col-12">
-                                <div className="form-group">
-                                    <input type="text" className="form-control" id="First-Name" placeholder="Name" />
-                                </div>
-                            </div>
-                            <div className="col-12">
-                                <div className="form-group">
-                                    <input type="email" className="form-control" id="Email" placeholder="Email" />
-                                </div>
-                            </div>
-                            <div className="col-12">
-                                <div className="form-group">
-                                    <input type="text" className="form-control" id="Number" placeholder="Phone" />
-                                </div>
-                            </div>
-                            <div className="col-12">
-                                <div className="form-group">
-                                    <input type="text" className="form-control" id="Address" placeholder="Address" />
-                                </div>
-                            </div>
-                            <div className="col-12">
-                                <div className="form-group">
-                                    <textarea name="message" className="form-control" id="Message" cols={30} rows={5} placeholder="Message" defaultValue={""} />
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" className="default-btn">
-                            <span>Submit</span>
-                        </button>
-                    </form>
-                </div>
-                
-            </section> */}
+
       <section className="volunteer-join-area volunteer-join-area-page ptb-100">
         <div className="container">
           <form className="volunteer-join">
             <div className="volunteer-title">
               <h2>Volunteer Registration Form</h2>
-              <p style={{ marginTop: "2rem", textAlign: "left" }}>
+              <p style={{ marginTop: "2rem", textAlign: "center" }}>
                 Thank you for your willingness to serve Srila Prabhupada’s
                 disciples. Please fill out the form below to indicate your
                 interest and the areas where you’d like to contribute.
@@ -381,35 +369,52 @@ const Becomevolunteer = () => {
               </div> */}
               <div className="col-12">
                 <div className="form-group">
-                  {/* <label for="availability" className="form-group" >Availability:</label> */}
-                  <div>
-                    <select
+                  <div className="custom-dropdown">
+                    <div
                       className="form-control"
-                      id="Country"
-                      style={{ backgroundColor: "#F99115", color: "#fff" }}
-                      onChange={handleSelectChange}
+                      style={{
+                        backgroundColor: "#F99115",
+                        color: "#fff",
+                        cursor: "pointer",
+                        textAlign: "left",
+                      }}
+                      onClick={() => setShowDropdown(!showDropdown)}
                     >
-                      <option value="">Areas of Interest</option>
-                      <option value="Financial Assistance">
-                        Financial Assistance
-                      </option>
-                      <option value="Healthcare Coordination">
-                      Medical/health practioner
-                      </option>
-                      <option value="Emotional Support">
-                        Emotional and Spiritual Support
-                      </option>
-                      <option value="Health Assessments">
-                        Comprehensive Health Assessments
-                      </option>
-                      <option value="Community Building">
-                        Community Building Activities
-                      </option>
-                      <option value="Relocation Assistance">
-                        Relocation Assistance
-                      </option>
-                      <option value="Other">Any other way</option>
-                    </select>
+                      {selectedOptions.length > 0
+                        ? selectedOptions.join(", ")
+                        : "Areas of Interest"}
+                    </div>
+
+                    {showDropdown && (
+                      <div
+                        className="dropdown-options"
+                        style={{
+                          backgroundColor: "#F99115",
+                          padding: "10px",
+                          borderRadius: "5px",
+                          textAlign: "left",
+                        }}
+                      >
+                        {options.map((option, index) => (
+                          <div
+                            key={index}
+                            onClick={() => handleOptionClick(option)}
+                            style={{
+                              padding: "5px",
+                              cursor: "pointer",
+                              color: "#fff",
+                            }}
+                          >
+                            <input
+                              type="checkbox"
+                              checked={selectedOptions.includes(option)}
+                              readOnly
+                            />
+                            <span style={{ marginLeft: "5px" }}>{option}</span>
+                          </div>
+                        ))}
+                      </div>
+                    )}
 
                     {showOtherInput && (
                       <input
@@ -425,7 +430,7 @@ const Becomevolunteer = () => {
                 </div>
               </div>
 
-              <div>
+              <div style={{ textAlign: "left" }}>
                 <label for="experience">
                   Do you have any relevant experience in the selected areas?
                 </label>
@@ -440,7 +445,7 @@ const Becomevolunteer = () => {
                   }}
                 ></textarea>
               </div>
-              <div>
+              <div style={{ textAlign: "left" }}>
                 <label for="motivation">
                   Why do you want to volunteer for this service?
                 </label>
@@ -455,7 +460,7 @@ const Becomevolunteer = () => {
                   }}
                 ></textarea>
               </div>
-              <div>
+              <div style={{ textAlign: "left" }}>
                 <label for="skills">
                   Do you have any specific skills (e.g., healthcare, event
                   planning, counseling)?
@@ -472,7 +477,13 @@ const Becomevolunteer = () => {
                 ></textarea>
               </div>
 
-              <div style={{ display: "flex", marginTop: "1rem" }}>
+              <div
+                style={{
+                  display: "flex",
+                  marginTop: "1rem",
+                  textAlign: "left",
+                }}
+              >
                 <input type="checkbox" id="consent" name="consent" required />
                 <label for="consent">
                   I agree to the terms and conditions and understand the
@@ -480,9 +491,19 @@ const Becomevolunteer = () => {
                 </label>
               </div>
             </div>
-            <button type="submit" className="default-btn">
-              <span>Submit</span>
-            </button>
+            <div style={{ textAlign: "left" }}>
+              <button
+                style={{
+                  padding: ".5rem 1rem",
+                  backgroundColor: "#f99115",
+                  color: "white",
+                  borderRadius: "10px",
+                }}
+              >
+                {" "}
+                <span>Meet the volunteers</span>
+              </button>
+            </div>
           </form>
         </div>
       </section>

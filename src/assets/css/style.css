@@ -3754,10 +3754,10 @@ textarea.form-control {
   visibility: hidden;
 }
 
-.footer-widget .photo-galler li a:hover::before {
+/* .footer-widget .photo-galler li a:hover::before {
   opacity: 0.5;
   visibility: visible;
-}
+} */
 
 .copyright-area {
   background-color: #111;

@@ -42,75 +42,49 @@ const Footer = () => {
           <h3>Useful Links</h3>
           <ul className="link">
             <li>
-              <a onClick={() => navigate("/aboutus")} href="#">About Us</a>
+              <a onClick={() => navigate("/privacypolicy")} href="#"> Privacy Policy</a>
             </li>
             <li>
-              <a onClick={() => navigate("/services")} href="#">Key Feature</a>
+              <a onClick={() => navigate("/teamcondition")} href="#"> Terms and Condition</a>
             </li>
-            <li>
-              <a onClick={() => navigate("/causes")} href="#">Donor</a>
-            </li>
-            <li>
-              <a onClick={() => navigate("/contactus")} href="#">Contact Us</a>
-            </li>
+           
            
           </ul>
         </div>
       </div>
-      <div className="col-lg-3 col-sm-6">
-        <div className="footer-widget">
-          <h3>Pages</h3>
-          <ul className="link">
-            <li>
-              <a onClick={() => navigate("/team")} href="#">Team</a>
-            </li>
-            <li>
-              <a onClick={() => navigate("/volunteer")} href="#">Volunteers</a>
-            </li>
-            <li>
-              <a onClick={() => navigate("/events")} href="#">Success Stories</a>
-            </li>
-            <li>
-              <a onClick={() => navigate("/becomevolunteer")} href="#">Become a Volunteers</a>
-            </li>
-            <li>
-              <a onClick={() => navigate("/implementationProcess")} href="#">Implementation Process</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="col-lg-3 col-sm-6">
+    
+      <div className="col-lg-6 col-sm-6">
         <div className="footer-widget">
           <h3>Photo Gallery</h3>
           <ul className="photo-galler">
             <li>
               <a href="#">
-                <img src={f1} alt="image" style={{height:'40px', width:'80px'}} />
+                <img src={f1} alt="image" style={{height:'80px', width:'150px'}} />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src={f2}alt="image" style={{height:'40px', width:'80px'}}/>
+                <img src={f2}alt="image" style={{height:'80px', width:'150px'}} />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src={f4} alt="image" style={{height:'40px',width:'80px'}}/>
+                <img src={f4} alt="image" style={{height:'80px', width:'150px'}} />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src={f5} alt="image" style={{height:'40px',width:'80px'}}/>
+                <img src={f5} alt="image" style={{height:'80px', width:'150px'}} />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src={f6} alt="image" style={{height:'40px',width:'80px'}}/>
+                <img src={f6} alt="image" style={{height:'80px', width:'150px'}} />
               </a>
             </li>
             <li>
               <a href="#">
-                <img src={f1} alt="image" style={{height:'40px',width:'80px'}} />
+                <img src={f1} alt="image" style={{height:'80px', width:'150px'}} />
               </a>
             </li>
           </ul>
